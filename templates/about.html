@@ -1,0 +1,18 @@
+{% extends 'blog_base.html' %}
+
+{% load static %}
+
+
+{% block content %}
+
+{#link rel#}
+{#link rel#}
+    {% autoescape off %}
+    <article>
+{#            about 数据对象 display 为方法#}
+        Hello World!
+        {{ about.display_html }}
+    </article>
+    {% endautoescape %}
+
+{% endblock content %}

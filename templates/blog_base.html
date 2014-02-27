@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html>
+<head>
+    <title>JPollo Blog</title>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}"/>
+    <script type="text/javascript" src="{% static 'blog.js' %}"></script>
+
+</head>
+
+<body>
+
+    <div id="main" style="position: relative">
+        <header>
+            <div id="logo">
+                <div id="logo_text">
+                    <h1>JPollo Blog</h1>
+                    <h2>Happy Hacking!</h2>
+                </div>
+            </div>
+            <nav>
+                <div id="menu_container">
+                    <ul class="sf-menu" id="nav">
+                        <li><a href="/blog"></a>Home</li>
+                        <li><a href="/blog/archive"></a>Archives</li>
+                        <li><a href="/blog/about"></a>About</li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+
+        <div id="site_content">
+            <div class="content_container">
+                <span class="toggle-sidebar"></span>
+                <div class="content">
+                    {% block content %}
+                        Need to be filled.
+                    {% endblock content %}
+                    <br/>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer-->
+        <foot>
+
+        </foot>
+
+
+    </div>
+</body>
+</html>

@@ -37,6 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
+    'south'
 )
 
 MIDDLEWARE_CLASSES = (
@@ -48,19 +49,37 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
+
 ROOT_URLCONF = 'MyBlog.urls'
 
+
 WSGI_APPLICATION = 'MyBlog.wsgi.application'
+
+
+TEMPLATE_DIRS = (
+    '/Users/shenjie/PycharmProjects/MyBlog/templates',
+)
 
 
 # Database
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases
 
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.sqlite3',
+#        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#    }
+#}
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+        'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+        'NAME': 'blog',    # Or path to database file if using sqlite3.
+        'USER': 'root',                    # Not used with sqlite3.
+        'PASSWORD': 'hhkb',                # Not used with sqlite3.
+        'HOST': 'localhost',        # Set to empty string for localhost. Not used with sqlite3.
+        'PORT': '',        # Set to empty string for default. Not used with sqlite3.
+        }
 }
 
 # Internationalization
@@ -81,3 +100,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATIC_ROOT = '/Users/shenjie/PycharmProjects/MyBlog/static/'
+
+#STATICFILES_DIRS = (
+     #'/Users/shenjie/PycharmProjects/MyBlog/static/',
+# )
+
