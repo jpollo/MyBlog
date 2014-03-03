@@ -6,51 +6,87 @@
 <head>
     <title>JPollo Blog</title>
 
-    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}"/>
-    <script type="text/javascript" src="{% static 'blog.js' %}"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}"/>
+
+    <script type="text/javascript" src="{% static 'js/blog.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
 
 </head>
 
-<body>
+<body style="background-color: #f9f9f9">
 
-    <div id="main" style="position: relative">
-        <header>
-            <div id="logo">
-                <div id="logo_text">
-                    <h1>JPollo Blog</h1>
-                    <h2>Happy Hacking!</h2>
-                </div>
-            </div>
-            <nav>
-                <div id="menu_container">
-                    <ul class="sf-menu" id="nav">
-                        <li><a href="/blog"></a>Home</li>
-                        <li><a href="/blog/archive"></a>Archives</li>
-                        <li><a href="/blog/about"></a>About</li>
-                    </ul>
-                </div>
+ <div class="blog_title">
+        <img src={% static 'img/about.jpg' %} class="img_title" alt=""/>
+        <div class="blog_title_slogan">
+            Shen Jie <br/>
+            Developer.
+        </div>
+    </div>
+
+    <!--Head and Nav-->
+    <div class="blog_masterhead">
+        <div class="container">
+            <nav class="blog_nav">
+                <a class="blog_nav_item" href="/blog" >Home</a>
+                <a class="blog_nav_item" href="/blog/archive" >Archive</a>
+                <a class="blog_nav_item" href="/blog/about" >About</a>
             </nav>
-        </header>
+        </div>
+    </div>
+
+    <!--Blog Post-->
+    <div class="container">
+        <!--Left sidebar-->
+        <div class="col-sm-2">
+
+        </div>
+
+        <!--博客内容-->
+        <div class="col-sm-8 blog_main">
+            <!--Head and Nav-->
+            <!--<div class="blog_masterhead">-->
+                    <!--<nav class="blog_nav">-->
+                        <!--<a class="blog_nav_item" href="" >Home</a>-->
+                        <!--<a class="blog_nav_item" href="" >Archive</a>-->
+                        <!--<a class="blog_nav_item" href="" >About</a>-->
+                    <!--</nav>-->
+            <!--</div>-->
+            <!--  -->
+{#            <div class="blog_post">#}
+{#                <h2 class="blog_post_title"> Title</h2>#}
+{#                <p class="blog_post_meta"> January 1, 2014 by <a href="">Shen Jie</a></p>#}
 
 
-        <div id="site_content">
-            <div class="content_container">
-                <span class="toggle-sidebar"></span>
-                <div class="content">
                     {% block content %}
                         Need to be filled.
                     {% endblock content %}
-                    <br/>
-                </div>
-            </div>
+
+{#            </div>#}
         </div>
 
-        <!-- Footer-->
-        <foot>
+        <!--Right Sidebar-->
+        <div class="col-sm-2">
 
-        </foot>
-
-
+        </div>
     </div>
+
+
+    <!--Footer 置底-->
+    <!--TODO 显示社交图标-->
+
+    <div class="blog_footer">
+        <p>Blog is built by Shenjie</p>
+        <p> All Rights Reserved</p>
+        <!--TODO icon-->
+        <div class="social_icon">
+            <img src="{% static 'img/webicon-github-m.png' %}"  alt=""/>
+            <img src="{% static 'img/webicon-googleplus-m.png' %}"  alt=""/>
+            <img src="{% static 'img/webicon-linkedin-m.png' %}"  alt=""/>
+            <img src="{% static 'img/webicon-twitter-m.png' %}"  alt=""/>
+        </div>
+    </div>
+
+
 </body>
 </html>

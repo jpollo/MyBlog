@@ -1,31 +1,30 @@
-{% extends 'admin/base.html' %}
+{% extends 'blog_base.html' %}
 
 {% load static %}
-
+{% load read_more %}
 
 {% block content %}
 
 {#     <link rel="stylesheet" href="{% static 'css/gfm.css' %}"/>#}
     <link rel="stylesheet" href="{% static 'css/friendly.css' %}"/>
 
+    <div id="home_page">
     {% for blogpost in blogposts %}
         {% autoescape off %}
             <article>
                 {#            about 数据对象 display 为方法#}
                 <div class="blog_post">
-                    <h2 class="blog_post_title"> {{ blogpost.title }}</h2>
-
-                    <p class="blog_post_meta"> {{ blogpost.pub_date }} by <a href="">Shen Jie</a></p>
+                    <p class="blog_post_meta"> {{ blogpost.pub_date }} </p>
+                     <h2> <a class="blog_post_title" href="{{ blogpost.get_absolute_url }}">{{ blogpost.title }} </a></h2>
                     {#  show blogs in list   #}
                     <div class="blog_post_content">
-
-                        {{ blogpost.display_html }}
+                        {{ blogpost.display_html | read_more:blogpost.get_absolute_url }}
                     </div>
+                    <!-- TODO Category and Tag info-->
                 </div>
             </article>
         {% endautoescape %}
     {% endfor %}
+    </div>
 
 {% endblock content %}
-
-

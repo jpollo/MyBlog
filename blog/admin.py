@@ -9,7 +9,10 @@ from django.forms import TextInput, Textarea
 from django.core.files.base import ContentFile
 import os
 import platform
-
+import codecs
+import sys
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 class MyModelForm(forms.ModelForm):
 
@@ -18,6 +21,9 @@ class MyModelForm(forms.ModelForm):
         super(MyModelForm, self).__init__(*args, **kwargs)
         if self.instance.md_file:
             self.initial['body'] = self.instance.md_file.read()
+            # self.initial['body'] = codecs.open(self.instance.md_file, encoding="utf-8")
+            # self.initial['body'] = unicode(self.instance.md_file.read(), "utf-8")
+            # print self.inital['body']
 
 
 class BlogPostModelAdmin(admin.ModelAdmin):

@@ -1,17 +1,19 @@
 {% extends 'blog_base.html' %}
-
 {% load static %}
 
 
 {% block content %}
 
-{#link rel#}
-{#link rel#}
+{#     <link rel="stylesheet" href="{% static 'css/gfm.css' %}"/>#}
+    <link rel="stylesheet" href="{% static 'css/friendly.css' %}"/>
     {% autoescape off %}
     <article>
 {#            about 数据对象 display 为方法#}
-        Hello World!
-        {{ about.display_html }}
+    <div class="blog_post">
+{#                <h2 class="blog_post_title"> About</h2>#}
+{#                <p class="blog_post_meta"> January 1, 2014 by <a href="">Shen Jie</a></p>#}
+                {{ about.display_html }}
+            </div>
     </article>
     {% endautoescape %}
 

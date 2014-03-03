@@ -1,0 +1,52 @@
+{% extends 'blog_base.html' %}
+
+{% load static %}
+
+
+{% block content %}
+
+{#     <link rel="stylesheet" href="{% static 'css/gfm.css' %}"/>#}
+    <link rel="stylesheet" href="{% static 'css/friendly.css' %}"/>
+
+        {% autoescape off %}
+            <article >
+                {# about 数据对象 display 为方法#}
+                <div class="blog_post">
+                    <header>
+                        <p class="blog_post_meta"> {{ blogpost.pub_date }} </p>
+                        <h1><a class="blog_post_title" href="{{ blogpost.get_absolute_url }}"> {{ blogpost.title }} </a> </h1>
+                    </header>
+                    <div class="blog_post_content">
+                        {{ blogpost.display_html }}
+                    </div>
+                    <!-- TODO Category and Tag info-->
+                    <!-- TODO 版权申明-->
+
+
+                    <!-- Disqus Comment-->
+                    <!-- TODO 显示Comments-->
+                    <div id="disqus_thread">
+
+                        <script type="text/javascript">
+                            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+                            var disqus_shortname = 'jpollo-django-blog'; // required: replace example with your forum shortname
+
+                            /* * * DON'T EDIT BELOW THIS LINE * * */
+                            (function () {
+                                var dsq = document.createElement('script');
+                                dsq.type = 'text/javascript';
+                                dsq.async = true;
+                                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                            })();
+                        </script>
+                        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments
+                            powered by Disqus.</a></noscript>
+                        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                    </div>
+
+                </div>
+            </article>
+        {% endautoescape %}
+
+{% endblock content %}

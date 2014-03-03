@@ -5,6 +5,13 @@ from django.db import models
 from django.utils import timezone
 import os
 import requests
+import markdown
+from django.core.urlresolvers import reverse
+import sys
+
+# sys.setdefaultencoding('utf-8')
+
+
 
 # Create your models here.
 
@@ -52,8 +59,8 @@ class BlogPost(models.Model):
         if not self.body and self.md_file:
             self.body = self.md_file.read()
 
-        headers = {'Content-Type': 'text/plain'}
-        if type(self.body)  == bytes:
+        # headers = {'Content-Type': 'text/plain'}
+        if type(self.body) == bytes:
             data = self.body
         elif type(self.body) == str:
             data = self.body.encode('utf-8')
@@ -61,10 +68,12 @@ class BlogPost(models.Model):
             data = 'None'
             print("Cannot find body's type ...")
 
-        r = requests.post('https://api.github.com/markdown/raw', headers=headers, data=data)
-        self.html_file.save(self.title+'.html', ContentFile(r.text.encode('utf-8')), save=False)
+        #转换编码
+        r = markdown.markdown(self.body.encode("utf-8"), ['codehilite'])
+        # r = requests.post('https://api.github.com/markdown/raw', headers=headers, data=data)
+        self.html_file.save(self.title+'.html', ContentFile(r.encode('utf-8')), save=False)
         self.html_file.close()
-        models.Model.save(self )
+        models.Model.save(self)
         # super(models.Model, self).save()
         # models.Model.save()
         # super(models.Model, self).save(*args, **kwargs)
@@ -77,7 +86,24 @@ class BlogPost(models.Model):
         # with open(self.html_file.path, encoding='utf-8') as f:
             return f.read()
 
+    def get_meta_data(self):
+        #获取元信息 编辑的时间，作者
+        pass
 
+    def get_absolute_url(self):
+        print "get absolute url,id "
+        print "and then"
+        # 对应urls.py中的url.name
+        print ("hello", reverse('blog', kwargs={"id": self.id}))
+        return reverse("blog", kwargs={"id": self.id})
+
+    # @register.filter('read_more')
+    def read_more(body, absolute_url):
+
+        if '<!--more-->' in body:
+            return body[:body.find('<!--more-->')] + '<a href="' + str(absolute_url) + '">' + "READ MORE" + '</a>'
+        else:
+            return body
 
 
 

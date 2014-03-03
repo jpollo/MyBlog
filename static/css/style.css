@@ -1,0 +1,160 @@
+body {
+
+    /*background-color: #428bca;*/
+     /*background: #111;*/
+}
+
+.blog_masterhead {
+
+    text-align: center;
+    /*height: 100px;*/
+    margin-top: 10px;
+    background-color: #428bca;
+    box-shadow: 0 -2px 5px rgba(0,0,0,.1);
+}
+
+.blog_nav_item {
+    font-family: Arial;
+    font-size: 16px;
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    /*margin-right: 20px;*/
+    font-weight: 500;
+    color: #cdddeb;
+}
+
+.blog_nav_item:hover,
+.blog_nav_item:focus {
+    color: #fff;
+    text-decoration: none;
+}
+.blog_nav .active {
+    color: #fff;
+}
+
+.blog_nav .active:after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    vertical-align: middle;
+}
+
+.blog_main {
+    font-size: 18px;
+    line-height: 1.5;
+    /*margin-top: 30px;*/
+}
+
+.blog_post {
+    margin-top: 35px;
+}
+
+.blog_post_title:hover,
+.blog_post_title:focus {
+    text-decoration: none;
+}
+
+.blog_post_meta_link:hover,
+.blog_post_meta_link:focus {
+    text-decoration: none;
+}
+
+
+.blog_post_title {
+    /*margin-bottom: 150px;*/
+    font-size: 40px;
+}
+
+.blog_post_meta {
+    /*margin-bottom: 20px;*/
+    color: #999;
+}
+
+
+/*article .blog_post {*/
+#home_page article{
+    /*为了调整 首页 文章与文章之间的距离和分割线*/
+    padding-bottom: 20px;
+    background: url("../img/title_bg.png") bottom left repeat-x;
+}
+
+#home_page article:last-child {
+    background: none;
+}
+/*article .blog_post:last-child {*/
+   /*background: none;*/
+/*}*/
+
+/*.blog_single_page .blog_post_title {*/
+    /*padding-bottom: 20px;*/
+    /*background: url("../img/title_bg.png") bottom left repeat-x;*/
+/*}*/
+
+article header {
+    /*单篇blog中题目下方的距离与分割线*/
+    background: url("../img/title_bg.png") bottom left repeat-x;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+article .blog_post_content {
+    margin-bottom: 30px;
+}
+
+/*
+Footer
+*/
+.blog_footer {
+    /*padding: 30px 0;*/
+    padding-top: 30px;
+    padding-bottom: 20px;
+    color: #999;
+    text-align: center;
+    /*background-color: #f9f9f9;*/
+    background-color: #e0e0e0;
+    /*border-top: 1px solid #e9e5e5;*/
+    border-top: 1px solid #aeaeae;
+    /*border-bottom: #f9f9f9;*/
+}
+
+
+
+/*   博客头部  */
+.blog_title {
+    margin-top: 25px;
+    text-align: center;
+    /*background-color: #999;*/
+}
+
+.blog_title_slogan {
+    font-size: 15px;
+    font-family:'Oregano', cursive, Serif, Sans-serif, sans-serif, Verdana, Arial, Helvetica;
+    margin-top: 12px;
+}
+
+
+.img_title {
+    width:108px;height:108px;
+    /*设置图像的长和宽*/
+    border-radius: 54px;
+    /*设置图像圆角效果,在这里我直接设置了超过width/2的像素，即为圆形了*/
+    -webkit-border-radius: 54px;
+    /*圆角效果：兼容webkit浏览器*/
+    -moz-border-radius:54px;
+    box-shadow: inset 0 -1px 0 #3333sf;
+    /*设置图像阴影效果*/
+    -webkit-box-shadow: inset 0 -1px 0 #3333sf;
+    -webkit-transition: 0.4s;
+    -webkit-transition: -webkit-transform 0.4s ease-out;
+    transition: transform 0.4s ease-out;
+    /*变化时间设置为0.4秒(变化动作即为下面的图像旋转360读）*/
+    -moz-transition: -moz-transform 0.4s ease-out;
+}
+
+.social_icon img {
+    height: 25px;
+    margin-right: 16px;
+}
