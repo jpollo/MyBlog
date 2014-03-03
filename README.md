@@ -8,7 +8,7 @@ TODO
 ======
 
 ### 简单目标
-* blog中日期用过滤器显示简单日期格式 YEAR MONTH
+* ~~blog中日期用过滤器显示简单日期格式 YEAR MONTH~~
 * 中文编码fix
 * 一页显示的blog 数目
 * 每篇博客内的html 模板中替换 author 关键字 meta信息等

@@ -14,8 +14,15 @@
             <article>
                 {#            about 数据对象 display 为方法#}
                 <div class="blog_post">
-                    <p class="blog_post_meta"> {{ blogpost.pub_date }} </p>
-                     <h2> <a class="blog_post_title" href="{{ blogpost.get_absolute_url }}">{{ blogpost.title }} </a></h2>
+{#                    <header>#}
+                    <p class="blog_post_meta">
+                        <span class="year"> {{ blogpost.pub_date.year }}</span>
+                        <span class="month"> {{ blogpost.pub_date|date:"M" }}</span>
+                        <span class="day">{{ blogpost.pub_date.day }}</span>
+{#                        {{ blogpost.pub_date }}#}
+                    </p>
+                     <h1> <a class="blog_post_title" href="{{ blogpost.get_absolute_url }}">{{ blogpost.title }} </a></h1>
+{#                    </header>#}
                     {#  show blogs in list   #}
                     <div class="blog_post_content">
                         {{ blogpost.display_html | read_more:blogpost.get_absolute_url }}
