@@ -8,6 +8,7 @@ import requests
 import markdown
 from django.core.urlresolvers import reverse
 import sys
+from django.template.defaultfilters import slugify
 
 # sys.setdefaultencoding('utf-8')
 
@@ -41,6 +42,7 @@ class BlogPost(models.Model):
     last_edit_time = models.DateTimeField('last edited', default=timezone.now())
     category = models.CharField(max_length=30)
     tags = models.CharField(max_length=20)
+    slug = models.SlugField(max_length=200, blank=True)
     html_file = models.FileField(upload_to=get_html_name, blank=True)
 
     def filename(self):
@@ -55,6 +57,7 @@ class BlogPost(models.Model):
 
     def save(self, *args, **kwargs):
         print("Blog Post is Saving...")
+        self.slug = slugify(unicode(self.title.replace('-', 'and')))
         # 如果body为空 md file不为空
         if not self.body and self.md_file:
             self.body = self.md_file.read()
@@ -91,22 +94,8 @@ class BlogPost(models.Model):
         pass
 
     def get_absolute_url(self):
-        print "get absolute url,id "
-        print "and then"
+        # print "get absolute url,id "
+        # print "and then"
         # 对应urls.py中的url.name
-        print ("hello", reverse('blog', kwargs={"id": self.id}))
-        return reverse("blog", kwargs={"id": self.id})
-
-    # @register.filter('read_more')
-    def read_more(body, absolute_url):
-
-        if '<!--more-->' in body:
-            return body[:body.find('<!--more-->')] + '<a href="' + str(absolute_url) + '">' + "READ MORE" + '</a>'
-        else:
-            return body
-
-
-
-
-
-
+        # print ("hello", reverse('blog', kwargs={"id": self.id}))
+        return reverse("blog", kwargs={"slug": self.slug, "id": self.id})

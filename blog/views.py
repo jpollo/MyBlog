@@ -1,27 +1,52 @@
 #encoding=utf8
 
-from django.shortcuts import render,get_object_or_404
+from django.shortcuts import render,get_object_or_404, redirect
 from django.http import HttpResponse
-from .models import  BlogPost
+from .models import BlogPost
 from collections import defaultdict
+from math import ceil
+
+from operator import itemgetter, attrgetter
 
 # Create your views here.
 
 exclude_posts = ("about", "projects")
 
 
-def home(request):
-
+def home(request, page=''):
+    print "home arg: page :", page
+    # 每页显示的数量
+    count = 3
     # 传递首页的blog对象
     args = dict()
-    args['blogposts'] = BlogPost.objects.exclude(title__in=exclude_posts)
-    print args
-    return render(request, 'home.html', args)
-    # return render(request, '../templates/index.html', args)
-    # return HttpResponse("Hello World")
+    # temp = BlogPost.objects.exclude(title__in=exclude_posts)
+    args['blogposts'] = BlogPost.objects.exclude(title__in=exclude_posts).order_by('-pub_date')
+    # sorted(temp, cmp=lambda x, y: cmp(x.pub_date, y.pub_date), reverse=False)
+    # sorted(temp, key=attrgetter('pub_date'), reverse=True)
+    # print "after sort ", args['blogposts']
+    #samplelist_obj.sort(lambda x,y: cmp(x.a, y.a))
+
+    max_page = int(ceil(len(args['blogposts']) / float(count)))
+    print "max_page: ", max_page
+    if page and int(page) > max_page:  #0,1 ->/
+        #  超出页面 返回首页
+        return redirect("/blog")
+    else:
+        page = int(page) if (page and int(page) > 0) else 1
+        args['page'] = page
+        # Older
+        args['prev_page'] = page+1 if page < max_page else None
+        # Newer
+        args['next_page'] = page-1 if page > 1 else None
+        # slice value
+        args['sl'] = str(count*(page-1)) + ":" + str(count*(page-1)+count)
+        print args
+        return render(request, 'home.html', args)
+        # return render(request, '../templates/index.html', args)
+        # return HttpResponse("Hello World")
 
 
-def blogpost(request, id):
+def blogpost(request, slug, id):
     print("model in blogpost method: %s"%id)
     blogpost = get_object_or_404(BlogPost, pk=id)
     args = {'blogpost':blogpost}

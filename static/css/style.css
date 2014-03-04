@@ -2,6 +2,7 @@ body {
 
     /*background-color: #428bca;*/
      /*background: #111;*/
+    font-family: "Microsoft YaHei" ! important;
 }
 
 .blog_masterhead {
@@ -48,7 +49,7 @@ body {
 /*TODO */
 .blog_main {
     font-size: 18px;
-    line-height: 1.5;
+    line-height: 1.4;
     /*margin-top: 30px;*/
 }
 
@@ -133,7 +134,7 @@ article .blog_post_content {
 }
 
 /*
-Footer
+-------------------Footer-----------------
 */
 .blog_footer {
     margin-top: 30px;
@@ -149,13 +150,20 @@ Footer
     border-top: 1px solid #aeaeae;
     /*border-bottom: #f9f9f9;*/
     box-shadow: 0 -2px 5px rgba(0,0,0,.1);
+    /*opacity: 0.4;*/
 }
 
+.social_icon img {
+    height: 25px;
+    margin-right: 16px;
+}
+/*------------END Footer-------------*/
 
 
-/*   博客头部  */
+
+/* --------------  博客头部  ----------*/
 .blog_title {
-    margin-top: 25px;
+    margin-top: 18px;
     text-align: center;
     /*background-color: #999;*/
 }
@@ -185,7 +193,37 @@ Footer
     -moz-transition: -moz-transform 0.4s ease-out;
 }
 
-.social_icon img {
-    height: 25px;
-    margin-right: 16px;
+/* --------------END  博客头部  ----------*/
+
+.page_nav {
+    height: 60px;
+    font-size: .95em;
+    position: relative;
+}
+
+.page_nav a {
+    padding-top: 30px;
+    text-decoration: none;
+    color: #aaa;
+}
+
+.page_nav a:hover {
+    color: rgb(1, 129, 235);
+    text-decoration: none;
+}
+.page_nav a.prev {
+    position: absolute;
+    left: 100px;
+}
+
+.page_nav a.next {
+    position: absolute;
+    right: 100px;
+}
+
+
+.blog_nav a {
+    font-size: 1.2em;
+    font-family: 'Varela Round';
+    margin: 0 18px;
 }

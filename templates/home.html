@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="{% static 'css/friendly.css' %}"/>
 
     <div id="home_page">
-    {% for blogpost in blogposts %}
+
+    {% for blogpost in blogposts|slice:sl %}
         {% autoescape off %}
             <article>
                 {#            about 数据对象 display 为方法#}
@@ -19,10 +20,11 @@
                         <span class="year"> {{ blogpost.pub_date.year }}</span>
                         <span class="month"> {{ blogpost.pub_date|date:"M" }}</span>
                         <span class="day">{{ blogpost.pub_date.day }}</span>
-{#                        {{ blogpost.pub_date }}#}
+                        {#                        {{ blogpost.pub_date }}#}
                     </p>
-                     <h1> <a class="blog_post_title" href="{{ blogpost.get_absolute_url }}">{{ blogpost.title }} </a></h1>
-{#                    </header>#}
+
+                    <h1><a class="blog_post_title" href="{{ blogpost.get_absolute_url }}">{{ blogpost.title }} </a></h1>
+                    {#                    </header>#}
                     {#  show blogs in list   #}
                     <div class="blog_post_content">
                         {{ blogpost.display_html | read_more:blogpost.get_absolute_url }}
@@ -32,6 +34,16 @@
             </article>
         {% endautoescape %}
     {% endfor %}
+
+        <div class="page_nav">
+            {% if prev_page %}
+                <a class="prev" href="/blog/{{ prev_page }}">Older</a>
+            {% endif %}
+
+            {% if next_page %}
+                <a class="next" href="/blog/{{ next_page }}">Next</a>
+            {% endif %}
+        </div>
     </div>
 
 {% endblock content %}
