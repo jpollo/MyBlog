@@ -3,15 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="099fe158-1794-40e0-b35f-8a6541fb48b3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/BlogPost/2014/about_1.html" afterPath="$PROJECT_DIR$/content/BlogPost/2014/about_1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/BlogPost/2014/about_1.md" afterPath="$PROJECT_DIR$/content/BlogPost/2014/about_1.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/BlogPost/2014/blog2.md" afterPath="$PROJECT_DIR$/content/BlogPost/2014/blog2.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/blog_base.html" afterPath="$PROJECT_DIR$/templates/blog_base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/home.html" afterPath="$PROJECT_DIR$/templates/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/models.py" afterPath="$PROJECT_DIR$/blog/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/style.css" afterPath="$PROJECT_DIR$/static/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/urls.py" afterPath="$PROJECT_DIR$/blog/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/views.py" afterPath="$PROJECT_DIR$/blog/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MyBlog.iws" />
@@ -38,7 +29,7 @@
       <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="15" selection-start="142" selection-end="142" vertical-scroll-proportion="0.23272727" vertical-offset="0" max-vertical-offset="825">
+            <state line="15" column="2" selection-start="227" selection-end="227" vertical-scroll-proportion="0.29090908" vertical-offset="0" max-vertical-offset="825">
               <folding />
             </state>
           </provider>
@@ -532,26 +523,30 @@
       <created>1393841568600</created>
       <updated>1393841568600</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="1. fix一页显示固定数量的post&#10;2. add prev and next&#10;3. update README&#10;">
+      <created>1393898002990</created>
+      <updated>1393898002990</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22222222" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22222222" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3282532" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32942554" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -570,7 +565,8 @@
     <MESSAGE value="1. 重绘前段模板UI&#10;2. 实现Home Archive About基本功能&#10;3. 实现markdown -》 html&#10;4. static 配置&#10;" />
     <MESSAGE value="1. update README&#10;2. fix some css" />
     <MESSAGE value="update README&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="update README&#10;" />
+    <MESSAGE value="1. fix一页显示固定数量的post&#10;2. add prev and next&#10;3. update README&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="1. fix一页显示固定数量的post&#10;2. add prev and next&#10;3. update README&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -851,7 +847,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="15" selection-start="142" selection-end="142" vertical-scroll-proportion="0.23272727" vertical-offset="0" max-vertical-offset="825">
+        <state line="15" column="2" selection-start="227" selection-end="227" vertical-scroll-proportion="0.29090908" vertical-offset="0" max-vertical-offset="825">
           <folding />
         </state>
       </provider>
