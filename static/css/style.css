@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Monaco;
+    src: url('../fonts/MONACO.TTF');
+}
+
 body {
 
     /*background-color: #428bca;*/
@@ -226,4 +231,24 @@ article .blog_post_content {
     font-size: 1.2em;
     font-family: 'Varela Round';
     margin: 0 18px;
+}
+
+
+/* TODO  blog 内容中 英文字体*/
+/*.blog_post_content h2{*/
+    /*font-family: Monaco;*/
+/*}*/
+
+/*.blog_post_content h1 {*/
+    /*font-family: Monaco;*/
+/*}*/
+/*.blog_post_content h3 {*/
+    /*font-family: Monaco;*/
+/*}*/
+/*.blog_post_content h4 {*/
+    /*font-family: Monaco;*/
+/*}*/
+
+.blog_post_content {
+    font-family: Monaco;
 }
