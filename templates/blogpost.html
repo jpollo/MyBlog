@@ -7,7 +7,7 @@
 
 {#     <link rel="stylesheet" href="{% static 'css/gfm.css' %}"/>#}
     <link rel="stylesheet" href="{% static 'css/friendly.css' %}"/>
-
+        <div id="single_page">
         {% autoescape off %}
             <article >
                 {# about 数据对象 display 为方法#}
@@ -24,6 +24,16 @@
                         {{ blogpost.display_html }}
                     </div>
                     <!-- TODO Category and Tag info-->
+                    <div class="blog_post_tag">
+                        <img src="{% static 'img/tag.png' %}" class="tag_img" height=30px alt=""/>
+                        {% for tag in blogpost.get_tags %}
+                        <ul class="blog_post_tag_list">
+                            <li class="tag_item">
+                                {{ tag }}
+                            </li>
+                        </ul>
+                        {% endfor %}
+                    </div>
                     <!-- TODO 版权申明-->
 
 
@@ -52,5 +62,6 @@
                 </div>
             </article>
         {% endautoescape %}
+        </div>
 
 {% endblock content %}

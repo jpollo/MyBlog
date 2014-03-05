@@ -15,12 +15,15 @@ TODO
 * ~~首页分页显示页面底端显示 next page , prev page~~
 * ~~社交icon 链接~~
 * 完善get_absolute_url 链接格式
-* blog tag支持 (扁平化tag 参考linkedin )
-* 按照Category分类
+* ~~blog tag支持 (扁平化tag 参考linkedin )~~
+* 按照Category，tag分类
 * nav active 显示支持
 * 添加math 公式符号支持
 
 ### 终极目标
+
+* 批量导入md文件夹/压缩包
+
 * 美化页面样式
     * font 字体
     * READMORE sytle

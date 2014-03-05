@@ -1,16 +1,15 @@
 #encoding=utf8
 from django.core.files.base import ContentFile
-
 from django.db import models
 from django.utils import timezone
 import os
 import requests
 import markdown
 from django.core.urlresolvers import reverse
-import sys
 from django.template.defaultfilters import slugify
-
-# sys.setdefaultencoding('utf-8')
+import sys
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 
 
@@ -92,6 +91,9 @@ class BlogPost(models.Model):
     def get_meta_data(self):
         #获取元信息 编辑的时间，作者
         pass
+
+    def get_tags(self):
+        return self.tags.encode(encoding='utf-8').split(',')
 
     def get_absolute_url(self):
         # print "get absolute url,id "
