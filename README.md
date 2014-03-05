@@ -19,6 +19,9 @@ TODO
 * 按照Category，tag分类
 * nav active 显示支持
 * 添加math 公式符号支持
+* 改写singlepage meta信息，添加页面查看统计次数，评论个数
+    * title居中
+* Projects 链接， 采用slides模式 下拉
 
 ### 终极目标
 

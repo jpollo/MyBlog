@@ -28,9 +28,11 @@
                         <img src="{% static 'img/tag.png' %}" class="tag_img" height=30px alt=""/>
                         {% for tag in blogpost.get_tags %}
                         <ul class="blog_post_tag_list">
-                            <li class="tag_item">
-                                {{ tag }}
-                            </li>
+                            <a href="">
+                                <li class="tag_item">
+                                    {{ tag }}
+                                 </li>
+                            </a>
                         </ul>
                         {% endfor %}
                     </div>

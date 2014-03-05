@@ -11,11 +11,6 @@ import sys
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-
-
-# Create your models here.
-
-
 upload_dir = 'content/BlogPost/%s/%s'
 
 

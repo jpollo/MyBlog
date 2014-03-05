@@ -15,4 +15,8 @@ urlpatterns = patterns(
     #url(r'^(?P<id>\d+)/$', views.blogpost, name='blog'),
     url(r'^(?P<slug>[-\w\d]+)-(?P<id>\d+)/$', views.blogpost, name='blog'),
 
+    # url /blog/category/xx
+
+    # url /blog/tag/xx
+
 )

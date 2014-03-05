@@ -25,7 +25,7 @@ body {
     font-size: 16px;
     position: relative;
     display: inline-block;
-    padding: 10px;
+    /*padding: 10px;*/
     /*margin-right: 20px;*/
     font-weight: 500;
     color: #cdddeb;
@@ -226,10 +226,16 @@ article .blog_post_content {
 }
 
 
+
 .blog_nav a {
     font-size: 1.2em;
     font-family: 'Varela Round';
-    margin: 0 18px;
+    /*margin: 0 18px;*/
+    padding: 0.6em  1.4em;
+    /*padding-left: 20px;*/
+    /*padding-right: 20px;*/
+    /*padding-top: 10px;*/
+    /*padding-bottom: 10px;*/
 }
 
 
@@ -301,7 +307,8 @@ ul.blog_post_tag_list {
     /*background-color: #aeaeae;*/
     /*background-color: #aeaeae;*/
     /*background-color: #e5e5e5;*/
-    background-color: #bfbfbf;
+    /*background-color: #bfbfbf;*/
+    background-color: #a6a6a6;
     position: relative;
     display: inline-block;
     /*overflow: hidden;*/
@@ -320,6 +327,18 @@ ul.blog_post_tag_list {
 }
 
 
+a .tag_item {
+    text-decoration: none;
+    /*color: #000000;*/
+    font:bold;
+    color: #ffffff;
+}
+
+a:hover .tag_item {
+    /*background-color: #007020;*/
+    background-color: #005719;
+}
+
 /*#single_page .blog_post_content{*/
 .blog_post_tag{
     border-bottom: 1px solid #ddd;;
@@ -327,4 +346,12 @@ ul.blog_post_tag_list {
     width: 100%
     /*margin-bottom: 30px;*/
 /*border-top: 1px solid #fff;*/
+}
+
+
+.current_page_item {
+    /*TODO 选中页面 nav 凹陷效果*/
+    /*background-color: #262626;*/
+    /*-webit-box-sizing:border-box;*/
+    /*-webkit-transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease, opacity 0.5s ease;*/
 }
