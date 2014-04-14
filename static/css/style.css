@@ -3,6 +3,12 @@
     src: url('../fonts/MONACO.TTF');
 }
 
+@font-face {
+    font-family:Optima;
+    src: url('../fonts/OPTIMA.TTF');
+}
+
+
 body {
 
     /*background-color: #428bca;*/
@@ -254,7 +260,16 @@ article .blog_post_content {
     /*font-family: Monaco;*/
 /*}*/
 
+
+/*Article  中的字体 */
 .blog_post_content {
+    /*font-family: Monaco;*/
+    font-family: Optima;
+}
+
+
+/* article 中的 code 代码 字体*/
+.blog_post_content code {
     font-family: Monaco;
 }
 
@@ -324,6 +339,9 @@ ul.blog_post_tag_list {
     box-shadow: 2px 1px 2px rgba(0,0,0,.1);
 
     margin-right: 10px;
+
+    /*圆角*/
+    border-radius: 3px;
 }
 
 

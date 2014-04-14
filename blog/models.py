@@ -7,6 +7,9 @@ import requests
 import markdown
 from django.core.urlresolvers import reverse
 from django.template.defaultfilters import slugify
+import unicodedata
+from unidecode import unidecode
+
 import sys
 reload(sys)
 sys.setdefaultencoding('utf-8')
@@ -50,8 +53,15 @@ class BlogPost(models.Model):
         return self.title
 
     def save(self, *args, **kwargs):
-        print("Blog Post is Saving...")
-        self.slug = slugify(unicode(self.title.replace('-', 'and')))
+        # print("Blog Post is Saving...")
+        # self.title.decode(encoding='utf-8')
+        # print "Title is %s"%self.title
+        # type(self.title)
+        self.title = unicode(self.title).decode(encoding='utf-8')
+        # print "Title is %s"%self.title
+        # self.slug = slugify(unicode(self.title.replace('-', 'and')))
+        self.slug = slugify(unidecode(self.title.replace('-', 'and')))
+        # print "slug is %s" %self.slug
         # 如果body为空 md file不为空
         if not self.body and self.md_file:
             self.body = self.md_file.read()

@@ -1,15 +1,12 @@
 #encoding=utf8
 
-from django.shortcuts import render,get_object_or_404, redirect
-from django.http import HttpResponse
+from django.shortcuts import render, get_object_or_404, redirect
 from .models import BlogPost
 from collections import defaultdict
 from math import ceil
 
-from operator import itemgetter, attrgetter
 
 # Create your views here.
-
 exclude_posts = ("about", "projects")
 
 
@@ -85,7 +82,7 @@ def about(request):
     the_about_post = get_object_or_404(BlogPost, title="about")
     if the_about_post:
         print("get about page...")
-        print(""+the_about_post.display_html())
+        # print(""+the_about_post.display_html())
     else:
         print("cannot get about page")
 

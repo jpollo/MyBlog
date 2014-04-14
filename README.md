@@ -32,4 +32,4 @@ TODO
     * READMORE sytle
 
 * 修改Admin Page
-    * 编辑模式页面
+    * 编辑模式页面和样式
