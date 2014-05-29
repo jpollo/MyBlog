@@ -13,13 +13,14 @@ body {
 
     /*background-color: #428bca;*/
      /*background: #111;*/
+    height: 100%;
     font-family: "Microsoft YaHei" ! important;
 }
 
-.blog_masterhead {
+.section_header {
     text-align: center;
     /*height: 100px;*/
-    margin-top: 10px;
+    /*margin-top: 10px;*/
     /*background-color: #428bca;*/
     background-color: #575757;
     box-shadow: 0 -3px 5px rgba(0,0,0,.1);
@@ -174,6 +175,7 @@ article .blog_post_content {
 /* --------------  博客头部  ----------*/
 .blog_title {
     margin-top: 18px;
+    margin-bottom: 10px;
     text-align: center;
     /*background-color: #999;*/
 }
@@ -185,7 +187,18 @@ article .blog_post_content {
 }
 
 
+#id_img_title {
+    text-align: left;
+    /*text-align: center;*/
+}
+
 .img_title {
+    /*margin-left: -10px;*/
+    /*position: absolute;*/
+    /*text-align: left;*/
+    visibility: hidden;
+    position: relative;
+
     width:108px;height:108px;
     /*设置图像的长和宽*/
     border-radius: 54px;
@@ -196,11 +209,14 @@ article .blog_post_content {
     box-shadow: inset 0 -1px 0 #3333sf;
     /*设置图像阴影效果*/
     -webkit-box-shadow: inset 0 -1px 0 #3333sf;
-    -webkit-transition: 0.4s;
-    -webkit-transition: -webkit-transform 0.4s ease-out;
-    transition: transform 0.4s ease-out;
+
+    /**/
+    /*-webkit-transition: 0.4s;*/
+    /*-webkit-transition: -webkit-transform 0.4s ease-out;*/
+    /*transition: transform 0.4s ease-out;*/
     /*变化时间设置为0.4秒(变化动作即为下面的图像旋转360读）*/
-    -moz-transition: -moz-transform 0.4s ease-out;
+    /*-moz-transition: -moz-transform 0.4s ease-out;*/
+
 }
 
 /* --------------END  博客头部  ----------*/
@@ -370,6 +386,65 @@ a:hover .tag_item {
 .current_page_item {
     /*TODO 选中页面 nav 凹陷效果*/
     /*background-color: #262626;*/
+    /*background-color: darkmagenta;*/
+    background-color: #808080;
+
     /*-webit-box-sizing:border-box;*/
     /*-webkit-transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease, opacity 0.5s ease;*/
+}
+
+
+/* loading progress bar style*/
+.m_loading{
+    background:#FF6100; //设置进度条的颜色
+
+    height:5px; //设置进度条的高度
+    line-height: 5px;
+    /*min-height:100%; //设置进度条的高度*/
+    min-height:5px; //设置进度条的高度
+    /*max-height:1px; //设置进度条的高度*/
+    /*font-size: 5px;*/
+     /*content: "";*/
+    /*clear: both;*/
+    /*content: '';*/
+    position:fixed; //设定进度条跟随屏幕滚动
+    /*position: absolutely; //设定进度条跟随屏幕滚动*/
+    top:0; //将进度条固定在页面顶部
+    z-index:99999  //提高进度条的优先层级，避免被其他层遮挡
+}
+
+
+.circle-label-rotate {
+    -webkit-animation-name: rotateThis;
+    -webkit-animation-duration:2s;
+    -webkit-animation-iteration-count:1;
+    -webkit-animation-timing-function:linear;
+}
+
+@-webkit-keyframes rotateThis {
+    from {-webkit-transform:scale(1) rotate(0deg);}
+    to {-webkit-transform:scale(1) rotate(360deg);}
+}
+
+/*.shrink{*/
+/*.section_header {*/
+	/*.nav li a{*/
+		/*padding: 20px 0;*/
+		/*font-size: 24px;*/
+	/*}*/
+	/*.nav .back-home a{*/
+		/*top: 0;*/
+	/*}*/
+	/*.nav-bg{*/
+		/*width: 100%;*/
+	/*}*/
+    /*.blog_nav {top:0}*/
+/*}*/
+
+.fixed{
+     position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 9999;
+
 }

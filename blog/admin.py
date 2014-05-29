@@ -37,14 +37,14 @@ class BlogPostModelAdmin(admin.ModelAdmin):
         with open('md_file_list.txt', 'wt') as f:
             f.write(str(md_file_list))
 
-        for root, subdir, files in  os.walk(os.path.join(settings.EDIA_ROOT, 'content/BlogPost')):
+        for root, subdir, files in os.walk(os.path.join(settings.EDIA_ROOT, 'content/BlogPost')):
             for file in files:
                 if file not in md_file_list:
                     os.remove(os.path.join(root, file))
         #change sytle
         formfield_overrides = {
             models.CharField: {'widget': TextInput(attrs={'size': '20'})},
-            models.TextField: {'widget': Textarea(attrs={'rows':100, 'colw':100})},
+            models.TextField: {'widget': Textarea(attrs={'rows': 100, 'cols': 100})},
         }
 
     #Save Action
@@ -67,6 +67,6 @@ class BlogPostModelAdmin(admin.ModelAdmin):
         obj.save()
 
 
-#Register to Admin System
+#Register to Admin Systm
 admin.site.register(BlogPost, BlogPostModelAdmin)
 
