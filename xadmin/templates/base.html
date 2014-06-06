@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE|default:"en-us" }}" >
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+
+    {% block extrameta %}
+        <meta name="description" content="">
+        <meta name="author" content="">
+    {% endblock %}
+
+    {#TODO robots#}
+    {% block blockbots %}
+        <meta name="robots" content="NONE,NOARCHIVE"/>
+    {% endblock %}
+
+    {#TODO title#}
+    <title>
+        {% block title %}
+        {% endblock %}
+    </title>
+
+
+    {# TODO  bootstrap css#}
+    {% vendor 'bootstrap.css' %}
+    {% vendor 'jquery.js' %}
+    {{ media.css }}
+
+    {% block extrastyle %}
+    {% endblock %}
+
+    {% url 'xadmin:index' as indexurl %}
+
+    {# TODO js file      #}
+    <script type="text/javascript">
+        window.__admin_media_prefix__ = "{% filter escapejs %}{% static "xadmin/" %}{% endfilter %}";
+        window.__admin_path_prefix__ = "{% filter escapejs %}{{ indexurl }}{% endfilter %}";
+    </script>
+
+    <script type="text/javascript" src="{% url 'xadmin:jsi18n' %}"></script>
+
+    {% block extrahead %}
+    {% endblock %}
+
+    {% view_block 'extrahead' %}
+
+</head>
+
+<body class="{% block bodyclass %}{% endblock %}">
+
+    {% block body %}
+    {% endblock body %}
+
+{#    {% vendor 'jquery-ui-sortable.js' 'bootstrap.js' 'xadmin.main.js' 'xadmin.responsive.js' %}#}
+
+{#    {{ media.js }}#}
+
+    {% block extrabody %}
+    {% endblock %}
+
+    {% view_block 'extrabody' %}
+
+</body>
+</html>

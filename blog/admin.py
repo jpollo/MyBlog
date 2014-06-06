@@ -11,6 +11,8 @@ import os
 import platform
 import codecs
 import sys
+from pagedown.widgets import AdminPagedownWidget
+
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
@@ -45,6 +47,7 @@ class BlogPostModelAdmin(admin.ModelAdmin):
         formfield_overrides = {
             models.CharField: {'widget': TextInput(attrs={'size': '20'})},
             models.TextField: {'widget': Textarea(attrs={'rows': 100, 'cols': 100})},
+            # models.TextField: {'widget': AdminPagedownWidget},
         }
 
     #Save Action

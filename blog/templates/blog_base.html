@@ -6,16 +6,16 @@
 <head>
     <title>JPollo Blog</title>
 
-    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}"/>
-    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
-    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="{% static 'blog/css/bootstrap.min.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'blog/css/style.css' %}"/>
+{#    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>#}
 
-    <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
-    <script type="text/javascript" src="{% static 'js/jquery.1.min.js' %}"></script>
-    <script type="text/javascript" src="{% static 'js/easing.1.3.js' %}"></script>
+    <script type="text/javascript" src="{% static 'blog/js/bootstrap.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'blog/js/jquery.1.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'blog/js/easing.1.3.js' %}"></script>
 
-    <script type="text/javascript" src="{% static 'js/blog.js' %}"></script>
-    <script type="text/javascript" src="{% static 'js/before_loading.js' %}"></script>
+    <script type="text/javascript" src="{% static 'blog/js/blog.js' %}"></script>
+    <script type="text/javascript" src="{% static 'blog/js/before_loading.js' %}"></script>
 
     <!-- TODO author description abstract -->
 
@@ -27,6 +27,7 @@
 <!-- 加载进度条 -->
 {#    <div class="m_loading" >&nbsp  </div>#}
 <div class="m_loading"></div>
+
 <script type="text/javascript">
     var bgColor = randomColor();
     {#        $('.m_loading').backgroundColor(bgColor);#}
@@ -34,7 +35,7 @@
 </script>
 
 <div class="blog_title">
-    <div id="id_img_title"><img src={% static 'img/about.jpg' %}  class="img_title" alt=""/></div>
+    <div id="id_img_title"><img src={% static 'blog/img/about.jpg' %}  class="img_title" alt=""/></div>
     <div class="blog_title_slogan">
         Shen Jie <br/>
         <!-- Developer. -->
@@ -52,7 +53,7 @@
 <div class="section_header">
     <div class="container">
         <nav class="blog_nav">
-            <a class="blog_nav_item" href="/blog/">Home</a>
+            <a class="blog_nav_item" href="/blog">Home</a>
             <a class="blog_nav_item" href="/blog/archive/">Archive</a>
             <a class="blog_nav_item" href="/blog/about/">About</a>
         </nav>
@@ -113,11 +114,11 @@
     <p> All Rights Reserved</p>
     <!--TODO icon-->
     <div class="social_icon">
-        <a href="https://github.com/jpollo"><img src="{% static 'img/webicon-github-m.png' %}" alt=""/> </a>
-        <a href="google.com/+ShenJie19891119"><img src="{% static 'img/webicon-googleplus-m.png' %}" alt=""/> </a>
-        <a href="http://www.linkedin.com/pub/shen-jie/85/10/5b3"><img src="{% static 'img/webicon-linkedin-m.png' %}"
+        <a href="https://github.com/jpollo"><img src="{% static 'blog/img/webicon-github-m.png' %}" alt=""/> </a>
+        <a href="google.com/+ShenJie19891119"><img src="{% static 'blog/img/webicon-googleplus-m.png' %}" alt=""/> </a>
+        <a href="http://www.linkedin.com/pub/shen-jie/85/10/5b3"><img src="{% static 'blog/img/webicon-linkedin-m.png' %}"
                                                                       alt=""/> </a>
-        <a href="https://twitter.com/jasonllinux"><img src="{% static 'img/webicon-twitter-m.png' %}" alt=""/> </a>
+        <a href="https://twitter.com/jasonllinux"><img src="{% static 'blog/img/webicon-twitter-m.png' %}" alt=""/> </a>
     </div>
 </div>
 
@@ -173,9 +174,9 @@ MathJax.Hub.Queue(function() {
 </script>
 
 <script>
-    $(document).ready(function () {
-        $('.m_loading').fadeOut();
-    });
+{#    $(document).ready(function () {#}
+{#        $('.m_loading').fadeOut();#}
+{#    });#}
 
     //
     {#        rotate();#}

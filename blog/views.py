@@ -37,7 +37,7 @@ def home(request, page=''):
         args['next_page'] = page-1 if page > 1 else None
         # slice value
         args['sl'] = str(count*(page-1)) + ":" + str(count*(page-1)+count)
-        print args
+        # print args
         return render(request, 'home.html', args)
         # return render(request, '../templates/index.html', args)
         # return HttpResponse("Hello World")

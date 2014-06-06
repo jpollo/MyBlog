@@ -10,7 +10,19 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
+import sys
+
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
+
+#
+PROJECT_ROOT = os.path.join(
+    os.path.realpath(os.path.dirname(__file__)), os.pardir)
+
+# print(">>>>>>>>>>>>>>"+PROJECT_ROOT)
 
 
 # Quick-start development settings - unsuitable for production
@@ -37,7 +49,9 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
-    'south'
+    'xadmin',
+    'south',
+    'pagedown',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -57,7 +71,8 @@ WSGI_APPLICATION = 'MyBlog.wsgi.application'
 
 
 TEMPLATE_DIRS = (
-    '/Users/shenjie/PycharmProjects/MyBlog/templates',
+    # '/Users/shenjie/PycharmProjects/MyBlog/templates',
+    os.path.join(PROJECT_ROOT, "blog/templates"),
 )
 
 
@@ -102,9 +117,12 @@ USE_TZ = True
 #PROJECT_PATH = os.path.abspath(os.path.dirname(__file__))
 
 #SITE_ROOT = os.path.join(os.getcwd(), '..')
-SITE_ROOT = "/Users/shenjie/PycharmProjects/MyBlog"
+# SITE_ROOT = "/Users/shenjie/PycharmProjects/MyBlog"
+SITE_ROOT = PROJECT_ROOT
+
 
 #STATIC_ROOT = os.path.join(SITE_ROOT, 'static')
+STATIC_ROOT = 'static/'
 
 STATIC_URL = '/static/'
 
@@ -114,7 +132,7 @@ STATICFILES_DIRS = (
     #("css", os.path.join(STATIC_ROOT, 'css')),
     #("js", os.path.join(STATIC_ROOT, 'js')),
     #("images", os.path.join(STATIC_ROOT, 'img')),
-    os.path.join(SITE_ROOT, 'static'),
+    # os.path.join(SITE_ROOT, 'blog/static'),
 )
 
 #STATICFILES_DIRS = (

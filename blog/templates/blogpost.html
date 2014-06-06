@@ -6,7 +6,7 @@
 {% block content %}
 
 {#     <link rel="stylesheet" href="{% static 'css/gfm.css' %}"/>#}
-    <link rel="stylesheet" href="{% static 'css/friendly.css' %}"/>
+    <link rel="stylesheet" href="{% static 'blog/css/friendly.css' %}"/>
 
         <div id="single_page">
         {% autoescape off %}
@@ -26,7 +26,7 @@
                     </div>
                     <!-- TODO Category and Tag info-->
                     <div class="blog_post_tag">
-                        <img src="{% static 'img/tag.png' %}" class="tag_img" height=30px alt=""/>
+                        <img src="{% static 'blog/img/tag.png' %}" class="tag_img" height=30px alt=""/>
                         {% for tag in blogpost.get_tags %}
                         <ul class="blog_post_tag_list">
                             <a href="">
