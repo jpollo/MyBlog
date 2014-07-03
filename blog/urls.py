@@ -12,8 +12,9 @@ urlpatterns = patterns(
     url('^archive/$', views.archive),
     url('^about/$', views.about),
     # TODO url 修改
-    #url(r'^(?P<id>\d+)/$', views.blogpost, name='blog'),
-    url(r'^(?P<slug>[-\w\d]+)-(?P<id>\d+)/$', views.blogpost, name='blog'),
+    # url(r'^(?P<id>\d+)/$', views.blogpost, name='blog'),
+    # url(r'^(?P<year>\d+)/(?P<month>\d+)/(?P<day>\d+)/?P<slug>[-\w]+/$', views.blogpost_new),
+      url(r'^(?P<year>\d{4})/(?P<month>\d{2})/(?P<day>\d{2})/(?P<slug>[-\w]+)/$', views.blogpost_new),
 
     # url /blog/category/xx
 

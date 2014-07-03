@@ -2,58 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="099fe158-1794-40e0-b35f-8a6541fb48b3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/BlogPost/2014/HelloWorld.md" afterPath="$PROJECT_DIR$/content/BlogPost/2014/HelloWorld.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/MyBlog.iml" afterPath="$PROJECT_DIR$/.idea/MyBlog.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/BlogPost/2014/about.md" afterPath="$PROJECT_DIR$/content/BlogPost/2014/about.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/BlogPost/2014/blog1.md" afterPath="$PROJECT_DIR$/content/BlogPost/2014/blog1.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/BlogPost/2014/blog2.md" afterPath="$PROJECT_DIR$/content/BlogPost/2014/blog2.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/static/blog/img/tag.png" afterPath="$PROJECT_DIR$/blog/static/blog/img/tag.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/blog/migrations/0001_initial.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/templates/404.html" afterPath="$PROJECT_DIR$/blog/templates/404.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/BlogPost/2014/HelloWorld.html" afterPath="$PROJECT_DIR$/content/BlogPost/2014/HelloWorld.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyBlog/__init__.py" afterPath="$PROJECT_DIR$/MyBlog/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/__init__.py" afterPath="$PROJECT_DIR$/blog/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/migrations/__init__.py" afterPath="$PROJECT_DIR$/blog/migrations/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/templatetags/__init__.py" afterPath="$PROJECT_DIR$/blog/templatetags/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xadmin/views/__init__.py" afterPath="$PROJECT_DIR$/xadmin/views/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/templates/about.html" afterPath="$PROJECT_DIR$/blog/templates/about.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/BlogPost/2014/about.html" afterPath="$PROJECT_DIR$/content/BlogPost/2014/about.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/BlogPost/2014/about_1.html" afterPath="$PROJECT_DIR$/content/BlogPost/2014/about_1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/BlogPost/2014/about_1.md" afterPath="$PROJECT_DIR$/content/BlogPost/2014/about_1.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/admin.py" afterPath="$PROJECT_DIR$/blog/admin.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog/static/blog/img/social_badges.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog/static/blog/img/social_icon.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/static/blog/css/archive.css" afterPath="$PROJECT_DIR$/blog/static/blog/css/archive.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/templates/archive.html" afterPath="$PROJECT_DIR$/blog/templates/archive.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xadmin/templates/base.html" afterPath="$PROJECT_DIR$/xadmin/templates/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xadmin/views/base.py" afterPath="$PROJECT_DIR$/xadmin/views/base.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/templates/admin/base_site.html" afterPath="$PROJECT_DIR$/blog/templates/admin/base_site.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/static/blog/js/before_loading.js" afterPath="$PROJECT_DIR$/blog/static/blog/js/before_loading.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/BlogPost/2014/blog1.html" afterPath="$PROJECT_DIR$/content/BlogPost/2014/blog1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/BlogPost/2014/blog2.html" afterPath="$PROJECT_DIR$/content/BlogPost/2014/blog2.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/templates/blog_base.html" afterPath="$PROJECT_DIR$/blog/templates/blog_base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/templates/blogpost.html" afterPath="$PROJECT_DIR$/blog/templates/blogpost.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/static/blog/js/easing.1.3.js" afterPath="$PROJECT_DIR$/blog/static/blog/js/easing.1.3.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/templates/home.html" afterPath="$PROJECT_DIR$/blog/templates/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/templates/index.html" afterPath="$PROJECT_DIR$/blog/templates/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/static/blog/js/jquery.1.min.js" afterPath="$PROJECT_DIR$/blog/static/blog/js/jquery.1.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/models.py" afterPath="$PROJECT_DIR$/blog/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/templatetags/read_more.py" afterPath="$PROJECT_DIR$/blog/templatetags/read_more.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyBlog/settings.py" afterPath="$PROJECT_DIR$/MyBlog/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xadmin/sites.py" afterPath="$PROJECT_DIR$/xadmin/sites.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/tests.py" afterPath="$PROJECT_DIR$/blog/tests.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyBlog/urls.py" afterPath="$PROJECT_DIR$/MyBlog/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/static/blog/css/style.css" afterPath="$PROJECT_DIR$/blog/static/blog/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/urls.py" afterPath="$PROJECT_DIR$/blog/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xadmin/urls.py" afterPath="$PROJECT_DIR$/xadmin/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/views.py" afterPath="$PROJECT_DIR$/blog/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyBlog/wsgi.py" afterPath="$PROJECT_DIR$/MyBlog/wsgi.py" />
     </list>
     <ignored path="MyBlog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -76,33 +35,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MyBlog/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1404" max-vertical-offset="2736">
-              <caret line="91" column="71" selection-start-line="91" selection-start-column="71" selection-end-line="91" selection-end-column="71" />
-              <folding>
-                <element signature="e#317#326#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog/static/blog/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="127" max-vertical-offset="8190">
-              <caret line="23" column="2" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="7578">
+              <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="blog_base.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/blog/templates/blog_base.html">
+      <file leaf-file-name="archive.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blog/templates/archive.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.34416825" vertical-offset="1098" max-vertical-offset="3438">
-              <caret line="71" column="11" selection-start-line="69" selection-start-column="6" selection-end-line="71" selection-end-column="12" />
+            <state vertical-scroll-proportion="-9.814815" vertical-offset="113" max-vertical-offset="900">
+              <caret line="21" column="65" selection-start-line="21" selection-start-column="65" selection-end-line="21" selection-end-column="65" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="archive.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blog/static/blog/css/archive.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1512" max-vertical-offset="2430">
+              <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -111,8 +68,52 @@
       <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1440" max-vertical-offset="2052">
-              <caret line="80" column="37" selection-start-line="80" selection-start-column="37" selection-end-line="80" selection-end-column="37" />
+            <state vertical-scroll-proportion="-11.653846" vertical-offset="201" max-vertical-offset="2196">
+              <caret line="28" column="28" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="28" />
+              <folding>
+                <element signature="e#15#61#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blog/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="486">
+              <caret line="16" column="91" selection-start-line="16" selection-start-column="91" selection-end-line="16" selection-end-column="91" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MyBlog/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="324">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/blog/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.76744187" vertical-offset="792" max-vertical-offset="2232">
+              <caret line="66" column="25" selection-start-line="66" selection-start-column="25" selection-end-line="66" selection-end-column="25" />
+              <folding>
+                <element signature="e#16#80#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="blog_base.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blog/templates/blog_base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-29.333334" vertical-offset="1080" max-vertical-offset="2376">
+              <caret line="104" column="15" selection-start-line="104" selection-start-column="15" selection-end-line="104" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -144,8 +145,6 @@
         <option value="$PROJECT_DIR$/templates/about.html" />
         <option value="$PROJECT_DIR$/templates/home.html" />
         <option value="$PROJECT_DIR$/static/js/jquery.1.min.js" />
-        <option value="$PROJECT_DIR$/blog/urls.py" />
-        <option value="$PROJECT_DIR$/blog/models.py" />
         <option value="$PROJECT_DIR$/templates/blogpost.html" />
         <option value="$PROJECT_DIR$/static/js/blog.js" />
         <option value="$PROJECT_DIR$/static/css/style.css" />
@@ -154,20 +153,26 @@
         <option value="$PROJECT_DIR$/templates/xadmin/base.html" />
         <option value="$PROJECT_DIR$/MyBlog/urls.py" />
         <option value="$PROJECT_DIR$/xadmin/__init__.py" />
-        <option value="$PROJECT_DIR$/blog/views.py" />
         <option value="$PROJECT_DIR$/xadmin/sites.py" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/blog/admin.py" />
         <option value="$PROJECT_DIR$/static/blog/css/style.css" />
-        <option value="$PROJECT_DIR$/blog/static/blog/css/style.css" />
         <option value="$PROJECT_DIR$/MyBlog/settings.py" />
+        <option value="$PROJECT_DIR$/blog/static/blog/js/load_math.js" />
+        <option value="$PROJECT_DIR$/blog/static/blog/js/before_loading.js" />
+        <option value="$PROJECT_DIR$/blog/templates/archive.html" />
+        <option value="$PROJECT_DIR$/blog/static/blog/css/style.css" />
+        <option value="$PROJECT_DIR$/blog/static/blog/css/archive.css" />
         <option value="$PROJECT_DIR$/blog/templates/blog_base.html" />
+        <option value="$PROJECT_DIR$/blog/models.py" />
+        <option value="$PROJECT_DIR$/blog/urls.py" />
+        <option value="$PROJECT_DIR$/blog/views.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="20" />
-    <option name="y" value="22" />
+    <option name="y" value="23" />
     <option name="width" value="1400" />
     <option name="height" value="818" />
   </component>
@@ -240,24 +245,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyBlog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyBlog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="MyBlog" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -290,6 +277,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/blog/static/blog/img" />
       <recent name="$PROJECT_DIR$/static/js" />
       <recent name="$PROJECT_DIR$/static/fonts" />
       <recent name="$PROJECT_DIR$/static/img" />
@@ -388,7 +376,27 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="MyBlog" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
@@ -414,27 +422,7 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="MyBlog" />
-      <option name="launchJavascriptDebuger" value="false" />
-      <option name="port" value="8000" />
-      <option name="host" value="" />
-      <option name="additionalOptions" value="" />
-      <option name="browserUrl" value="" />
-      <option name="runTestServer" value="false" />
-      <option name="runNoReload" value="false" />
-      <option name="useCustomRunCommand" value="false" />
-      <option name="customRunCommand" value="" />
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -575,11 +563,15 @@
       <created>1402043022195</created>
       <updated>1402043022195</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="升级系统后提交&#10;&amp;&#10;fix offset">
+      <created>1402794897660</created>
+      <updated>1402794897660</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="20" y="22" width="1400" height="818" extended-state="0" />
+    <frame x="20" y="23" width="1400" height="818" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -590,17 +582,17 @@
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26214287" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21094793" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21094793" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27369827" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27369827" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32942554" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32942554" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -631,7 +623,8 @@
     <MESSAGE value="添加Latex公式支持&#10;inline公式$ xx$&#10;段落间公式 $$ xx$$" />
     <MESSAGE value="1. 加载进度条&#10;2. logo动画效果&#10;3. Sticky Header" />
     <MESSAGE value="refine project" />
-    <option name="LAST_COMMIT_MESSAGE" value="refine project" />
+    <MESSAGE value="升级系统后提交&#10;&amp;&#10;fix offset" />
+    <option name="LAST_COMMIT_MESSAGE" value="升级系统后提交&#10;&amp;&#10;fix offset" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -639,13 +632,10 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/MyBlog/settings.py">
+    <entry file="file://$PROJECT_DIR$/blog/templates/blog_base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1404" max-vertical-offset="2736">
-          <caret line="91" column="71" selection-start-line="91" selection-start-column="71" selection-end-line="91" selection-end-column="71" />
-          <folding>
-            <element signature="e#317#326#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="1098" max-vertical-offset="3438">
+          <caret line="71" column="11" selection-start-line="69" selection-start-column="6" selection-end-line="71" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -653,14 +643,50 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1440" max-vertical-offset="2052">
           <caret line="80" column="37" selection-start-line="80" selection-start-column="37" selection-end-line="80" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyBlog/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1404" max-vertical-offset="2736">
+          <caret line="91" column="71" selection-start-line="91" selection-start-column="71" selection-end-line="91" selection-end-column="71" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog/static/blog/css/gfm.css">
+    <entry file="file://$PROJECT_DIR$/blog/static/blog/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2992">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="127" max-vertical-offset="8190">
+          <caret line="23" column="2" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/templates/blog_base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1098" max-vertical-offset="3438">
+          <caret line="71" column="11" selection-start-line="69" selection-start-column="6" selection-end-line="71" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1440" max-vertical-offset="2052">
+          <caret line="80" column="37" selection-start-line="80" selection-start-column="37" selection-end-line="80" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyBlog/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1404" max-vertical-offset="2736">
+          <caret line="91" column="71" selection-start-line="91" selection-start-column="71" selection-end-line="91" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1440" max-vertical-offset="2052">
+          <caret line="80" column="37" selection-start-line="80" selection-start-column="37" selection-end-line="80" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -678,13 +704,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog/static/blog/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="502">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog/static/blog/fonts/gfm.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6524272" vertical-offset="496" max-vertical-offset="6368">
@@ -696,13 +715,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34174758" vertical-offset="0" max-vertical-offset="515">
           <caret line="11" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/static/blog/css/friendly.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2347826" vertical-offset="532" max-vertical-offset="1056">
-          <caret line="40" column="38" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -739,27 +751,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog/templates/archive.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5" vertical-offset="0" max-vertical-offset="800">
-          <caret line="25" column="87" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/static/blog/css/archive.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1003" max-vertical-offset="1792">
-          <caret line="6" column="53" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/templates/blogpost.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.41798943" vertical-offset="460" max-vertical-offset="1216">
-          <caret line="9" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog/static/blog/js/easing.1.3.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.52397263" vertical-offset="2190" max-vertical-offset="3360">
@@ -771,13 +762,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.74954957" vertical-offset="176" max-vertical-offset="928">
           <caret line="37" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/static/blog/js/before_loading.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.71147543" vertical-offset="622" max-vertical-offset="1248">
-          <caret line="66" column="11" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -823,13 +807,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MyBlog/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20983607" vertical-offset="0" max-vertical-offset="610">
-          <caret line="12" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog/templates/about.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="448">
@@ -851,24 +828,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="416">
-          <caret line="11" column="31" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog/templates/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.1760684" vertical-offset="0" max-vertical-offset="880">
           <caret line="43" column="68" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7081967" vertical-offset="160" max-vertical-offset="1552">
-          <caret line="40" column="36" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -907,37 +870,133 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="1854">
-          <caret line="80" column="37" selection-start-line="80" selection-start-column="37" selection-end-line="80" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MyBlog/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1404" max-vertical-offset="2736">
           <caret line="91" column="71" selection-start-line="91" selection-start-column="71" selection-end-line="91" selection-end-column="71" />
-          <folding>
-            <element signature="e#317#326#0" expanded="true" />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/static/blog/img/social_badges.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/static/blog/img/social_icon.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/static/blog/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="216">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/static/blog/css/friendly.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.093023255" vertical-offset="672" max-vertical-offset="1188">
+          <caret line="40" column="38" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/static/blog/css/gfm.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2775" max-vertical-offset="3366">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/templates/blogpost.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30252102" vertical-offset="180" max-vertical-offset="1368">
+          <caret line="18" column="41" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/static/blog/js/before_loading.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.68604654" vertical-offset="1068" max-vertical-offset="1584">
+          <caret line="79" column="6" selection-start-line="79" selection-start-column="6" selection-end-line="79" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/blog/static/blog/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="127" max-vertical-offset="8190">
-          <caret line="23" column="2" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7578">
+          <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Python/2.7/site-packages/django/core/urlresolvers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="16.497019" vertical-offset="0" max-vertical-offset="10602">
+          <caret line="477" column="4" selection-start-line="477" selection-start-column="4" selection-end-line="477" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/blog/templates/blog_base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34416825" vertical-offset="1098" max-vertical-offset="3438">
-          <caret line="71" column="11" selection-start-line="69" selection-start-column="6" selection-end-line="71" selection-end-column="12" />
+        <state vertical-scroll-proportion="-29.333334" vertical-offset="1080" max-vertical-offset="2376">
+          <caret line="104" column="15" selection-start-line="104" selection-start-column="15" selection-end-line="104" selection-end-column="15" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/static/blog/css/archive.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2430">
+          <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/templates/archive.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.814815" vertical-offset="113" max-vertical-offset="900">
+          <caret line="21" column="65" selection-start-line="21" selection-start-column="65" selection-end-line="21" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyBlog/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="324">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="486">
+          <caret line="16" column="91" selection-start-line="16" selection-start-column="91" selection-end-line="16" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.653846" vertical-offset="201" max-vertical-offset="2196">
+          <caret line="28" column="28" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="28" />
+          <folding>
+            <element signature="e#15#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.76744187" vertical-offset="792" max-vertical-offset="2232">
+          <caret line="66" column="25" selection-start-line="66" selection-start-column="25" selection-end-line="66" selection-end-column="25" />
+          <folding>
+            <element signature="e#16#80#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

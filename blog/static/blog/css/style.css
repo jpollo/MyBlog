@@ -11,32 +11,46 @@
 
 body {
 
-    /*background-color: #428bca;*/
-     /*background: #111;*/
+    clear: both;
+    padding: 0;
+    margin: 0;
     height: 100%;
     font-family: "Microsoft YaHei" ! important;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
 .section_header {
     text-align: center;
-    /*margin-top: 10px;*/
     background-color: #575757;
-    /*box-shadow: 0 -3px 5px rgba(0,0,0,.1);*/
+    box-shadow: 0 -3px 5px rgba(0,0,0,.1);
     border-bottom: 1px solid #555555;
     box-shadow: 0 1px 2px rgba(0,0,0,.25),inset 0 1px 0 rgba(255,255,255,.15);
 }
 
-
-.blog_nav_item {
-    font-family: Arial;
-    font-size: 16px;
-    position: relative;
-    display: inline-block;
-    /*padding: 10px;*/
-    /*margin-right: 20px;*/
-    font-weight: 500;
-    color: #cdddeb;
+.blog_nav {
+    height: 4em;
+    line-height: 4em;
+    vertical-align: middle;
 }
+
+
+.blog_nav .blog_nav_item  {
+    font-size: 1.5em;
+    font-family: 'Varela Round';
+    color: #cdddeb;
+    /*padding: 0.6em  1.4em;*/
+    margin-right: 2.5em;
+    display: inline-block;
+    /*font-weight: 900;*/
+}
+
 
 .blog_nav_item:hover,
 .blog_nav_item:focus {
@@ -61,7 +75,6 @@ body {
 .blog_main {
     font-size: 18px;
     line-height: 1.4;
-    /*margin-top: 30px;*/
 }
 
 
@@ -83,8 +96,6 @@ body {
 
 
 .blog_post_title {
-    /*margin-bottom: 150px;*/
-    /*background-color: #000080;*/
     font-size: 40px;
 }
 
@@ -93,13 +104,25 @@ body {
     margin-top: 0px;
 }
 
-/*.blog_post p {*/
-    /*margin-bottom: 0px;*/
-/*}*/
 
 .blog_post_meta {
-    /*margin-bottom: 20px;*/
     color: #999;
+}
+
+.blog_post_meta .year {
+
+    font-size: 1.3em;
+    margin-right: 0.3em;
+}
+
+.blog_post_meta .month {
+    font-size: 0.8em;
+
+}
+
+.blog_post_meta .day {
+    font-size: 0.8em;
+
 }
 
 
@@ -113,29 +136,19 @@ body {
 #home_page article:last-child {
     background: none;
 }
-/*article .blog_post:last-child {*/
-   /*background: none;*/
-/*}*/
-
-/*.blog_single_page .blog_post_title {*/
-    /*padding-bottom: 20px;*/
-    /*background: url("../img/title_bg.png") bottom left repeat-x;*/
-/*}*/
 
 
+/*单篇blog中题目下方的距离与分割线*/
 
 article header {
-    /*单篇blog中题目下方的距离与分割线*/
     background: url("../img/title_bg.png") bottom left repeat-x;
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
 
-article .blog_post_meta {
-    /*margin-bottom: 0;*/
-    /*padding-bottom: -10px;*/
-    /*background-color: #000000;*/
-}
+/*article .blog_post_meta {*/
+
+/*}*/
 
 
 /*TODO 首页中得页面内容与title的距离*/
@@ -144,24 +157,19 @@ article .blog_post_content {
     margin-bottom: 30px;
 }
 
-/*
--------------------Footer-----------------
-*/
+/**/
+/*-------------------Footer-----------------*/
+/**/
 .blog_footer {
     margin-top: 30px;
-    /*padding: 30px 0;*/
-    padding-top: 30px;
-    padding-bottom: 20px;
+    margin-bottom: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
     color: #999;
     text-align: center;
-    /*background-color: #f9f9f9;*/
-    /*background-color: #e0e0e0;*/
     background-color: #2f2f2f;
-    /*border-top: 1px solid #e9e5e5;*/
     border-top: 1px solid #aeaeae;
-    /*border-bottom: #f9f9f9;*/
     box-shadow: 0 -2px 5px rgba(0,0,0,.1);
-    /*opacity: 0.4;*/
 }
 
 .social_icon img {
@@ -177,7 +185,6 @@ article .blog_post_content {
     margin-top: 18px;
     margin-bottom: 10px;
     text-align: center;
-    /*background-color: #999;*/
 }
 
 .blog_title_slogan {
@@ -189,13 +196,9 @@ article .blog_post_content {
 
 #id_img_title {
     text-align: left;
-    /*text-align: center;*/
 }
 
 .img_title {
-    /*margin-left: -10px;*/
-    /*position: absolute;*/
-    /*text-align: left;*/
     visibility: hidden;
     position: relative;
 
@@ -210,12 +213,12 @@ article .blog_post_content {
     /*设置图像阴影效果*/
     -webkit-box-shadow: inset 0 -1px 0 #3333sf;
 
-    /**/
-    /*-webkit-transition: 0.4s;*/
-    /*-webkit-transition: -webkit-transform 0.4s ease-out;*/
-    /*transition: transform 0.4s ease-out;*/
+
+    -webkit-transition: 0.4s;
+    -webkit-transition: -webkit-transform 0.4s ease-out;
+    transition: transform 0.4s ease-out;
     /*变化时间设置为0.4秒(变化动作即为下面的图像旋转360读）*/
-    /*-moz-transition: -moz-transform 0.4s ease-out;*/
+    -moz-transition: -moz-transform 0.4s ease-out;
 
 }
 
@@ -249,37 +252,12 @@ article .blog_post_content {
 
 
 
-.blog_nav a {
-    font-size: 1.2em;
-    font-family: 'Varela Round';
-    /*margin: 0 18px;*/
-    padding: 0.6em  1.4em;
-    /*padding-left: 20px;*/
-    /*padding-right: 20px;*/
-    /*padding-top: 10px;*/
-    /*padding-bottom: 10px;*/
-}
 
-
-/* TODO  blog 内容中 英文字体*/
-/*.blog_post_content h2{*/
-    /*font-family: Monaco;*/
-/*}*/
-
-/*.blog_post_content h1 {*/
-    /*font-family: Monaco;*/
-/*}*/
-/*.blog_post_content h3 {*/
-    /*font-family: Monaco;*/
-/*}*/
-/*.blog_post_content h4 {*/
-    /*font-family: Monaco;*/
-/*}*/
 
 
 /*Article  中的字体 */
 .blog_post_content {
-    /*font-family: Monaco;*/
+    font-family: Monaco;
     font-family: Optima;
 }
 
@@ -294,14 +272,10 @@ article .blog_post_content {
 .blog_post_tag {
     margin-top: 25px;
     margin-bottom: 25px;
-    /*background-color: #ffffff;*/
-    /*background-color: #902000;*/
     height: 40px;
     line-height: 40px;
     text-align: left;
-    /*float: left;*/
     padding-left: 5px;
-    /*margin-bottom: 20px;*/
 }
 
 .tag_img {
@@ -313,13 +287,7 @@ article .blog_post_content {
     margin-left: 0px;
     padding-left: 0px;
     /*TODO tag 垂直居中*/
-    /*padding-top: 5px;*/
     list-style: none;
-    /*height: 40px;*/
-    /*line-height: 40px;*/
-    /*padding-left: 14px;*/
-    /*vertical-align: middle;*/
-    /*background-color: #007020;*/
 }
 
 ul.blog_post_tag_list {
@@ -335,14 +303,10 @@ ul.blog_post_tag_list {
 
     text-align: center;
     vertical-align: middle;
-    /*background-color: #aeaeae;*/
-    /*background-color: #aeaeae;*/
-    /*background-color: #e5e5e5;*/
-    /*background-color: #bfbfbf;*/
     background-color: #a6a6a6;
     position: relative;
     display: inline-block;
-    /*overflow: hidden;*/
+    overflow: hidden;
     padding-left: 12px;
     padding-right: 12px;
 
@@ -363,13 +327,11 @@ ul.blog_post_tag_list {
 
 a .tag_item {
     text-decoration: none;
-    /*color: #000000;*/
     font:bold;
     color: #ffffff;
 }
 
 a:hover .tag_item {
-    /*background-color: #007020;*/
     background-color: #005719;
 }
 
@@ -378,39 +340,35 @@ a:hover .tag_item {
     border-bottom: 1px solid #ddd;;
     padding-bottom: 4em;
     width: 100%
-    /*margin-bottom: 30px;*/
-/*border-top: 1px solid #fff;*/
 }
 
 
-.current_page_item {
+/*.current_page_item {*/
     /*TODO 选中页面 nav 凹陷效果*/
-    /*background-color: #262626;*/
-    /*background-color: darkmagenta;*/
-    background-color: #808080;
+    /*background-color: #808080;*/
 
     /*-webit-box-sizing:border-box;*/
     /*-webkit-transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease, opacity 0.5s ease;*/
-}
+/*}*/
 
 
-/* loading progress bar style*/
+ /*loading progress bar style*/
 .m_loading{
-    background:#FF6100; //设置进度条的颜色
+    /*background:#FF6100;*/
 
-    height:5px; //设置进度条的高度
+    height:5px;
     line-height: 5px;
-    /*min-height:100%; //设置进度条的高度*/
-    min-height:5px; //设置进度条的高度
-    /*max-height:1px; //设置进度条的高度*/
-    /*font-size: 5px;*/
-     /*content: "";*/
-    /*clear: both;*/
-    /*content: '';*/
-    position:fixed; //设定进度条跟随屏幕滚动
-    /*position: absolutely; //设定进度条跟随屏幕滚动*/
-    top:0; //将进度条固定在页面顶部
-    z-index:99999  //提高进度条的优先层级，避免被其他层遮挡
+    min-height:100%;
+    min-height:5px;
+    max-height:1px;
+    font-size: 5px;
+     content: "";
+    clear: both;
+    content: '';
+    position:fixed;
+    position: absolute;
+    top:0;
+    z-index:99999
 }
 
 
@@ -426,20 +384,6 @@ a:hover .tag_item {
     to {-webkit-transform:scale(1) rotate(360deg);}
 }
 
-/*.shrink{*/
-/*.section_header {*/
-	/*.nav li a{*/
-		/*padding: 20px 0;*/
-		/*font-size: 24px;*/
-	/*}*/
-	/*.nav .back-home a{*/
-		/*top: 0;*/
-	/*}*/
-	/*.nav-bg{*/
-		/*width: 100%;*/
-	/*}*/
-    /*.blog_nav {top:0}*/
-/*}*/
 
 .fixed{
      position: fixed;
@@ -448,3 +392,24 @@ a:hover .tag_item {
     z-index: 9999;
 
 }
+
+
+.sprite_footer {
+    background: url("../img/social_icon.png")  ;
+}
+
+.footer_link {
+    width: 200px;
+    margin: 0 auto;
+}
+
+.footer_link li {
+    list-style-type: none;
+    float: left;
+    margin-right: 20px;
+    display: inline;
+}
+
+#panel1b {width: 35px; height: 35px; background-position: 0 0}
+#panel2b {width: 20px; height: 20px; background-position: 60% 60%}
+#panel3b {width: 20px; height: 20px; background-position: 70% 70%}

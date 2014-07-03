@@ -6,9 +6,9 @@
 <head>
     <title>JPollo Blog</title>
 
-    <link rel="stylesheet" type="text/css" href="{% static 'blog/css/bootstrap.min.css' %}"/>
+{#    <link rel="stylesheet" type="text/css" href="{% static 'blog/css/bootstrap.min.css' %}"/>#}
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="{% static 'blog/css/style.css' %}"/>
-{#    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>#}
 
     <script type="text/javascript" src="{% static 'blog/js/bootstrap.min.js' %}"></script>
     <script type="text/javascript" src="{% static 'blog/js/jquery.1.min.js' %}"></script>
@@ -17,38 +17,34 @@
     <script type="text/javascript" src="{% static 'blog/js/blog.js' %}"></script>
     <script type="text/javascript" src="{% static 'blog/js/before_loading.js' %}"></script>
 
-    <!-- TODO author description abstract -->
 
 </head>
 
-<!--TODO Move To CSS-->
 <body style="background-color: #f9f9f9">
-
 <!-- 加载进度条 -->
 {#    <div class="m_loading" >&nbsp  </div>#}
 <div class="m_loading"></div>
 
 <script type="text/javascript">
     var bgColor = randomColor();
-    {#        $('.m_loading').backgroundColor(bgColor);#}
     $('.m_loading').css({"background": bgColor});
 </script>
 
-<div class="blog_title">
-    <div id="id_img_title"><img src={% static 'blog/img/about.jpg' %}  class="img_title" alt=""/></div>
-    <div class="blog_title_slogan">
-        Shen Jie <br/>
-        <!-- Developer. -->
-    </div>
-</div>
+
+{#<div class="blog_title">#}
+{#    <div id="id_img_title"><img src={% static 'blog/img/about.jpg' %}  class="img_title" alt=""/></div>#}
+{#    <div class="blog_title_slogan">#}
+{#        Shen Jie <br/>#}
+{#        <!-- Developer. -->#}
+{#    </div>#}
+{#</div>#}
 
 <!-- STAGE 1 END-->
 <script type="text/javascript">
     $('.m_loading').animate({'width': '20%'}, 50);  //第一个进度节点
-    {#        alert("stage1");#}
 </script>
-
-
+{##}
+{##}
 <!--Head and Nav-->
 <div class="section_header">
     <div class="container">
@@ -66,61 +62,38 @@
 
 <!--Blog Post-->
 <div class="container">
-    <!--Left sidebar-->
-{#    <div class="col-sm-2">#}
-{##}
-{#    </div>#}
 
     <!--博客内容-->
     <div class="col-sm-8 col-md-offset-2 blog_main">
-        <!--Head and Nav-->
-        <!--<div class="blog_masterhead">-->
-        <!--<nav class="blog_nav">-->
-        <!--<a class="blog_nav_item" href="" >Home</a>-->
-        <!--<a class="blog_nav_item" href="" >Archive</a>-->
-        <!--<a class="blog_nav_item" href="" >About</a>-->
-        <!--</nav>-->
-        <!--</div>-->
-        <!--  -->
-        {#            <div class="blog_post">#}
-        {#                <h2 class="blog_post_title"> Title</h2>#}
-        {#                <p class="blog_post_meta"> January 1, 2014 by <a href="">Shen Jie</a></p>#}
-
-
         {% block content %}
             Need to be filled.
         {% endblock content %}
-
-        {#            </div>#}
     </div>
+
     <!-- STAGE 3    END-->
     <script type="text/javascript">
         $('.m_loading').animate({'width': '85%'}, 50);  //第一个进度节点
     </script>
 
-    <!--Right Sidebar-->
-    <div class="col-sm-2">
-
-    </div>
 </div>
 
 
 <!--Footer 置底-->
-<!--TODO 显示社交图标-->
 
 <div class="blog_footer">
-    <p>Blog is built by Shenjie</p>
+    <p>www.jpollo.com</p>
 
-    <p> All Rights Reserved</p>
-    <!--TODO icon-->
-    <div class="social_icon">
-        <a href="https://github.com/jpollo"><img src="{% static 'blog/img/webicon-github-m.png' %}" alt=""/> </a>
-        <a href="google.com/+ShenJie19891119"><img src="{% static 'blog/img/webicon-googleplus-m.png' %}" alt=""/> </a>
-        <a href="http://www.linkedin.com/pub/shen-jie/85/10/5b3"><img src="{% static 'blog/img/webicon-linkedin-m.png' %}"
-                                                                      alt=""/> </a>
-        <a href="https://twitter.com/jasonllinux"><img src="{% static 'blog/img/webicon-twitter-m.png' %}" alt=""/> </a>
-    </div>
+    <p>&copy;2014 All rights reserved</p>
+{#    <div >#}
+{#        <ul class="footer_link" >#}
+{#            <li class="sprite_footer" id="panel1b"><a href="#1"></a></li>#}
+{#            <li class="sprite_footer" id="panel2b"><a href="#2"></a></li>#}
+{#            <li class="sprite_footer" id="panel3b"><a href="#3"></a></li>#}
+{#        </ul>#}
+{#    </div>#}
 </div>
+
+
 
 <!-- STAGE 4    END-->
 <script type="text/javascript">
@@ -129,58 +102,26 @@
 </script>
 
 
-<script type="text/javascript">
-    jQuery(document).ready(function ($) {
-        // Get current url
-        // Select an a element that has the matching href and apply a class of 'active'. Also prepend a - to the content of the link
-        var url = window.location.href;
-        {#                 alert(url)#}
-        // Absoulete Url
-        //$('.menu a[href="' + url + '"]').addClass('current_page_item');
-        {#                 $('.blog_nav_item a').filter( function () { return this.href == url; } ).addClass('better-active')​;#}
+{#TODO  mathjax#}
 
-        $('.blog_nav a ').filter(
-                function () {
-                    {#                            alert(url + "\n" +this.href)#}
-                    {#                            alert(this.href == url)#}
-                    return this.href == url;
-                }
-        ).addClass('current_page_item');
+{#<script type="text/javascript"#}
+{#        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">#}
+{#</script>#}
+{##}
+{#<script type="text/x-mathjax-config">#}
+{#MathJax.Hub.Config({#}
+{#    tex2jax: {#}
+{#        inlineMath: [['$','$'], ['\\(','\\)']],#}
+{#        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'] // removed 'code' entry#}
+{#    }#}
+{#{);#}
+{#MathJax.Hub.Queue(function() {#}
+{#    var all = MathJax.Hub.getAllJax(), i;#}
+{#    for(i = 0; i < all.length; i += 1) {#}
+{#        all[i].SourceElement().parentNode.className += ' has-jax';#}
+{#    }#}
+{#{);#}
+{#</script>#}
 
-    })
-
-</script>
-
-
-<script type="text/javascript"
-        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-    tex2jax: {
-        inlineMath: [['$','$'], ['\\(','\\)']],
-        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'] // removed 'code' entry
-    }
-});
-MathJax.Hub.Queue(function() {
-    var all = MathJax.Hub.getAllJax(), i;
-    for(i = 0; i < all.length; i += 1) {
-        all[i].SourceElement().parentNode.className += ' has-jax';
-    }
-});
-
-
-</script>
-
-<script>
-{#    $(document).ready(function () {#}
-{#        $('.m_loading').fadeOut();#}
-{#    });#}
-
-    //
-    {#        rotate();#}
-
-</script>
 </body>
 </html>

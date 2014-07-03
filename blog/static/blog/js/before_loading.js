@@ -6,7 +6,6 @@ $(window).load(function () {
 
     if (endWith(url, "blog") || endWith(url, "blog/")) {
 
-//        alert("in index");
         var newPos = new Object();
         newPos.top = "" + $('.img_title').position().top;
         newPos.left = "-" + $('.img_title').width();
@@ -15,7 +14,6 @@ $(window).load(function () {
         rotate();
 
     } else {
-//        alert("not in index");
 
         $('#id_img_title').css({textAlign: "center"});
         $('.img_title').css({visibility: "visible"});
@@ -67,6 +65,18 @@ else
 //加载完进度条后消失
  $(document).ready(function () {
         $('.m_loading').fadeOut();
+    });
+
+
+jQuery(document).ready(function ($) {
+        var url = window.location.href;
+//     alert(url);
+//     alert($(document).href);
+        $('.blog_nav a ').filter(
+                function () {
+                    return this.href == url;
+                }
+        ).addClass('current_page_item');
     });
 
 

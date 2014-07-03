@@ -4,6 +4,7 @@ from django.shortcuts import render, get_object_or_404, redirect
 from .models import BlogPost
 from collections import defaultdict
 from math import ceil
+import datetime
 
 
 # Create your views here.
@@ -48,6 +49,29 @@ def blogpost(request, slug, id):
     blogpost = get_object_or_404(BlogPost, pk=id)
     args = {'blogpost':blogpost}
     return render(request, 'blogpost.html', args)
+
+def blogpost_new(request, year, month, day, slug):
+
+    print("year: " + year)
+    print("month: " + month)
+    print("day: " + day)
+    value = datetime.datetime(int(year), int(month), int(day))
+
+    entry = BlogPost.objects.filter(
+        slug=slug,
+        # pub_date__year = int(year),
+        # pub_date__month = int(month),
+        # pub_date=datetime.date(2014, 07, 02)
+        # pub_date=datetime.datetime(int(year), int(month), int(day)),
+        pub_date__range=(datetime.datetime.combine(value, datetime.time.min),
+                         datetime.datetime.combine(value, datetime.time.max))
+    )
+    if not entry:
+        print "404"
+    else:
+        # print(""+ entry)
+        args = {'blogpost': entry[0]}
+        return render(request, 'blogpost.html', args)
 
 
 def archive(request):

@@ -60,6 +60,11 @@ class BlogPost(models.Model):
         self.title = unicode(self.title).decode(encoding='utf-8')
         # print "Title is %s"%self.title
         # self.slug = slugify(unicode(self.title.replace('-', 'and')))
+        # if self.pub_date:
+            # self.slug = slugify("/" + str(self.pub_date.year) + "/" + str(self.pub_date.month) + "/" + str(self.pub_date.day) + "/"
+            #     + unidecode(self.title.replace('-', 'and')))
+            # self.slug = "/" + str(self.pub_date.year) + "/" + slugify(unidecode(self.title.replace('-', 'and')))
+        # else:
         self.slug = slugify(unidecode(self.title.replace('-', 'and')))
         # print "slug is %s" %self.slug
         # 如果body为空 md file不为空
@@ -105,4 +110,7 @@ class BlogPost(models.Model):
         # print "and then"
         # 对应urls.py中的url.name
         # print ("hello", reverse('blog', kwargs={"id": self.id}))
-        return reverse("blog", kwargs={"slug": self.slug, "id": self.id})
+        # return reverse("blog", kwargs={"slug": self.slug, "id": self.id})
+        # return "blog"
+        # print(self.pub_date.strftime("%Y/%m/%d"))
+        return "%s/%s" % (self.pub_date.strftime("%Y/%m/%d"), self.slug)
