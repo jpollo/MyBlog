@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html>
+<head>
+    <title>JPollo Blog</title>
+
+{#    <link rel="stylesheet" type="text/css" href="{% static 'blog/css/bootstrap.min.css' %}"/>#}
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'blog/css/style.css' %}"/>
+{#    <link rel="stylesheet" type="text/css" href="{% static 'blog/css/headhesive.css' %}"/>#}
+    <link rel="stylesheet" type="text/css" href="{% static 'blog/css/timeline.css' %}">
+
+    <script type="text/javascript" src="{% static 'blog/js/bootstrap.min.js' %}"></script>
+{#    <script type="text/javascript" src="{% static 'blog/js/jquery.1.min.js' %}"></script>#}
+    <script type="text/javascript" src="{% static 'blog/js/easing.1.3.js' %}"></script>
+{#    <script type="text/javascript" src="{% static 'blog/js/headhesive.min.js' %}"></script>#}
+
+
+    <script type="text/javascript" src="{% static 'blog/js/blog.js' %}"></script>
+    <script type="text/javascript" src="{% static 'blog/js/before_loading.js' %}"></script>
+{#    <script type="text/javascript" src="{% static 'blog/js/timeline-min.js' %}"></script>#}
+
+{#    <script type="text/javascript" src="{% static 'blog/js/jquery.min.172.js' %}"></script>#}
+{#    <script type="text/javascript" src="{% static 'blog/js/storyjs-embed.js' %}"></script>#}
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <!-- BEGIN TimelineJS -->
+    <script type="text/javascript" src="http://cdn.knightlab.com/libs/timeline/latest/js/storyjs-embed.js"></script>
+    <script>
+            $(document).ready(function() {
+                createStoryJS({
+                    type:       'timeline',
+{#                    lang:       'zh_cn',#}
+                    width:      '100%',
+                    height:     '670',
+                    source:      '{% static 'blog/data/timeline.json' %}',
+{#                    source:      '{% static 'blog/data/TimelineJSod1.csv' %}',#}
+                    embed_id:   'my-timeline'
+                });
+            });
+        </script>
+
+
+</head>
+
+<body style="background-color: #f9f9f9">
+<!-- 加载进度条 -->
+{#    <div class="m_loading" >&nbsp  </div>#}
+<div class="m_loading"></div>
+
+<script type="text/javascript">
+    var bgColor = randomColor();
+    $('.m_loading').css({"background": bgColor});
+</script>
+
+
+{#<div class="blog_title">#}
+{#    <div id="id_img_title"><img src={% static 'blog/img/about.jpg' %}  class="img_title" alt=""/></div>#}
+{#    <div class="blog_title_slogan">#}
+{#        Shen Jie <br/>#}
+{#        <!-- Developer. -->#}
+{#    </div>#}
+{#</div>#}
+
+<!-- STAGE 1 END-->
+<script type="text/javascript">
+    $('.m_loading').animate({'width': '20%'}, 50);  //第一个进度节点
+</script>
+{##}
+{##}
+<!--Head and Nav-->
+<div class="section_header">
+    <div class="container">
+        <nav class="blog_nav">
+            <a class="blog_nav_item" href="/blog">Home</a>
+            <a class="blog_nav_item" href="/blog/archive/">Archive</a>
+            <a class="blog_nav_item" href="/blog/about/">About</a>
+        </nav>
+    </div>
+</div>
+
+ <a id="showHere"></a>
+
+
+<!-- STAGE 2    END-->
+<script type="text/javascript">
+    $('.m_loading').animate({'width': '40%'}, 50);  //第一个进度节点
+</script>
+
+<!--Blog Post-->
+<div class="container">
+
+
+    <div id="my-timeline"></div>
+
+    <!-- STAGE 3    END-->
+    <script type="text/javascript">
+        $('.m_loading').animate({'width': '85%'}, 50);  //第一个进度节点
+    </script>
+
+</div>
+
+
+<!--Footer 置底-->
+
+<div class="blog_footer">
+    <p>www.jpollo.com</p>
+
+    <p>&copy;2014 All rights reserved</p>
+</div>
+
+
+
+<!-- STAGE 4    END-->
+<script type="text/javascript">
+    $('.m_loading').animate({'width': '100%'}, 50);  //第一个进度节点
+
+</script>
+
+</body>
+</html>

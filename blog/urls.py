@@ -10,7 +10,8 @@ urlpatterns = patterns(
     # url(r'^(?P<page>\d*)/?$', views.home),
     url(r'^(?P<page>\d*)/?$', views.home),
     url('^archive/$', views.archive),
-    url('^about/$', views.about),
+    # url('^about/$', views.about),
+    url('^about/$', views.about_timeline),
     # TODO url 修改
     # url(r'^(?P<id>\d+)/$', views.blogpost, name='blog'),
     # url(r'^(?P<year>\d+)/(?P<month>\d+)/(?P<day>\d+)/?P<slug>[-\w]+/$', views.blogpost_new),

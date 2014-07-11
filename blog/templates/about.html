@@ -7,17 +7,18 @@
 {#     <link rel="stylesheet" href="{% static 'css/gfm.css' %}"/>#}
     <link rel="stylesheet" href="{% static 'blog/css/friendly.css' %}"/>
     {% autoescape off %}
-    <article>
+{#    <article>#}
     {#            about 数据对象 display 为方法#}
-        <div class="blog_post">
+{#        <div class="blog_post">#}
     {#                <h2 class="blog_post_title"> About</h2>#}
     {#                <p class="blog_post_meta"> January 1, 2014 by <a href="">Shen Jie</a></p>#}
-            <div class="blog_post_content">
-                {{ about.display_html }}
-            </div>
+{#            <div class="blog_post_content">#}
+{#                {{ about.display_html }}#}
+{#            </div>#}
+            <iframe src='http://cdn.knightlab.com/libs/timeline/latest/embed/index.html?source=0AiBjCfgd-RJTdE1sME13NzVrVU12cVJRQ2hoSHBzdnc&font=Bevan-PotanoSans&maptype=toner&lang=zh-cn&height=650' width='100%' height='650' frameborder='0'></iframe>
 
-        </div>
-    </article>
+{#        </div>#}
+{#    </article>#}
     {% endautoescape %}
 
 {% endblock content %}

@@ -14,7 +14,8 @@ TODO
 * 每篇博客内的html 模板中替换 author 关键字 meta信息等
 * ~~首页分页显示页面底端显示 next page , prev page~~
 * ~~社交icon 链接~~
-* 完善get_absolute_url 链接格式
+* ~~完善get_absolute_url 链接格式~~
+* add google translate api
 * ~~blog tag支持 (扁平化tag 参考linkedin )~~
 * 按照Category，tag分类
 * nav active 显示支持
@@ -22,6 +23,10 @@ TODO
 * 改写singlepage meta信息，添加页面查看统计次数，评论个数
     * title居中
 * Projects 链接， 采用slides模式 下拉
+
+* 修正 创建时间和最后修改时间
+
+* refine scroll down
 
 ### 终极目标
 

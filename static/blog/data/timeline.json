@@ -1,0 +1,29 @@
+{
+    "timeline": {
+        "headline": "First headline",
+        "type": "default",
+        "text": "<p>fisrt text</p>",
+        "asset": {
+            "media": "http://yourdomain_or_socialmedialink_goes_here.jpg",
+            "credit": "Credit Name Goes Here",
+            "caption": "Caption text goes here"
+        }
+//        "date": [
+//            {
+//                "startDate": "2011,12,20",
+//                "endDate": "2011,12,21",
+//                "headline": "date headline",
+//                "text": "<p>date text</p>",
+//                "tag": "date tag",
+//                "classname": "optionaluniqueclassnamecanbeaddedhere",
+//                "asset": {
+//                    "media": "http://twitter.com/ArjunaSoriano/status/164181156147900416",
+//                    "thumbnail": "optional-32x32px.jpg",
+//                    "credit": "Credit Name Goes Here",
+//                    "caption": "Caption text goes here"
+//                }
+//            }
+//        ]
+    }
+
+}

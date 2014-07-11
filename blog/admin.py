@@ -12,20 +12,20 @@ import platform
 import codecs
 import sys
 from pagedown.widgets import AdminPagedownWidget
+from .models import Category
+from .models import Tag
 
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-class MyModelForm(forms.ModelForm):
 
-    def __init__(self, *args, **kwargs):
-        print("My Model Form __init__")
-        super(MyModelForm, self).__init__(*args, **kwargs)
-        if self.instance.md_file:
-            self.initial['body'] = self.instance.md_file.read()
-            # self.initial['body'] = codecs.open(self.instance.md_file, encoding="utf-8")
-            # self.initial['body'] = unicode(self.instance.md_file.read(), "utf-8")
-            # print self.inital['body']
+# class MyModelForm(forms.ModelForm):
+#
+#     def __init__(self, *args, **kwargs):
+#         print("My Model Form __init__")
+#         super(MyModelForm, self).__init__(*args, **kwargs)
+#         if self.instance.md_file:
+#             self.initial['body'] = self.instance.md_file.read()
 
 
 class BlogPostModelAdmin(admin.ModelAdmin):
@@ -43,19 +43,19 @@ class BlogPostModelAdmin(admin.ModelAdmin):
             for file in files:
                 if file not in md_file_list:
                     os.remove(os.path.join(root, file))
-        #change sytle
-        formfield_overrides = {
-            models.CharField: {'widget': TextInput(attrs={'size': '20'})},
-            models.TextField: {'widget': Textarea(attrs={'rows': 100, 'cols': 100})},
-            # models.TextField: {'widget': AdminPagedownWidget},
-        }
+
+    formfield_overrides = {
+        # models.CharField: {'widget': TextInput(attrs={'size': '30'})},
+        # models.TextField: {'widget': Textarea(attrs={'rows': 100, 'cols': 100})},
+        models.TextField: {'widget': AdminPagedownWidget}}
 
     #Save Action
     def save_model(self, request, obj, form, change):
+        # print("save model")
         if obj:
             if obj.body:
                 filename = obj.filename()
-                print("====filename is: %s", str(filename))
+                # print("====filename is: %s", str(filename))
                 # 如果 有文件
                 if filename != 'no md file':
                     if platform.system() == 'Windows':
@@ -64,12 +64,16 @@ class BlogPostModelAdmin(admin.ModelAdmin):
                         obj.md_file.delete(save=False)
                         obj.html_file.delete(save=False)
                 # 没有md file就根据title新建一个
-                print("+++++filename is: %s", str(filename))
+                # print("+++++filename is: %s", str(filename))
                 obj.md_file.save(filename + '.md', ContentFile(obj.body), save=False)
                 obj.md_file.close()
         obj.save()
 
+    exclude = ('slug',)
+
 
 #Register to Admin Systm
 admin.site.register(BlogPost, BlogPostModelAdmin)
+admin.site.register(Category)
+admin.site.register(Tag)
 

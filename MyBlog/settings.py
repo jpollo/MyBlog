@@ -121,8 +121,8 @@ USE_TZ = True
 SITE_ROOT = PROJECT_ROOT
 
 
-#STATIC_ROOT = os.path.join(SITE_ROOT, 'static')
-STATIC_ROOT = 'static/'
+# STATIC_ROOT = os.path.join(SITE_ROOT, 'static/')
+STATIC_ROOT = ''
 
 STATIC_URL = '/static/'
 
@@ -133,6 +133,7 @@ STATICFILES_DIRS = (
     #("js", os.path.join(STATIC_ROOT, 'js')),
     #("images", os.path.join(STATIC_ROOT, 'img')),
     # os.path.join(SITE_ROOT, 'blog/static'),
+    os.path.join(PROJECT_ROOT, 'static/'),
 )
 
 #STATICFILES_DIRS = (

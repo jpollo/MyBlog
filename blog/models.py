@@ -19,6 +19,9 @@ upload_dir = 'content/BlogPost/%s/%s'
 
 class BlogPost(models.Model):
 
+    STATUS = (('draft', 'published'),
+              ('published', 'published'),)
+
     ## TODO Num of args
     def get_upload_md_name(self, filename):
         year = self.pub_date.year
@@ -41,6 +44,7 @@ class BlogPost(models.Model):
     tags = models.CharField(max_length=20)
     slug = models.SlugField(max_length=200, blank=True)
     html_file = models.FileField(upload_to=get_html_name, blank=True)
+    # status = models.Field(max_length=30, choices=STATUS, default=STATUS[0])
 
     def filename(self):
         if self.md_file:
@@ -72,25 +76,16 @@ class BlogPost(models.Model):
             self.body = self.md_file.read()
 
         # headers = {'Content-Type': 'text/plain'}
-        if type(self.body) == bytes:
-            data = self.body
-        elif type(self.body) == str:
-            data = self.body.encode('utf-8')
-        else:
-            data = 'None'
-            print("Cannot find body's type ...")
 
-        #转换编码
-        r = markdown.markdown(self.body.encode("utf-8"), ['codehilite'])
-        # r = requests.post('https://api.github.com/markdown/raw', headers=headers, data=data)
-        self.html_file.save(self.title+'.html', ContentFile(r.encode('utf-8')), save=False)
-        self.html_file.close()
+        if self.body:
+           self.body.encode('utf-8')
+           #转换编码 markdown to html
+           r = markdown.markdown(self.body, ['codehilite'])
+           # r = requests.post('https://api.github.com/markdown/raw', headers=headers, data=data)
+           self.html_file.save(self.title+'.html', ContentFile(r), save=False)
+           self.html_file.close()
+
         models.Model.save(self)
-        # super(models.Model, self).save()
-        # models.Model.save()
-        # super(models.Model, self).save(*args, **kwargs)
-        # print("")
-        # super().save(*args, **kwargs)
 
     def display_html(self):
         #TODO encoding is invalid
@@ -114,3 +109,11 @@ class BlogPost(models.Model):
         # return "blog"
         # print(self.pub_date.strftime("%Y/%m/%d"))
         return "%s/%s" % (self.pub_date.strftime("%Y/%m/%d"), self.slug)
+
+
+class Category(models.Model):
+    category = models.CharField(max_length=30)
+
+
+class Tag(models.Model):
+    tag = models.CharField(max_length=30)

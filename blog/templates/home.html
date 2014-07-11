@@ -37,11 +37,11 @@
 
         <div class="page_nav">
             {% if prev_page %}
-                <a class="prev" href="/blog/{{ prev_page }}"><< Older</a>
+                <a   class="page_nav_icon" id="page_nav_prev" href="/blog/{{ prev_page }}"></a>
             {% endif %}
 
             {% if next_page %}
-                <a class="next" href="/blog/{{ next_page }}">Next >></a>
+                <a class="page_nav_icon" id="page_nav_next" href="/blog/{{ next_page }}"></a>
             {% endif %}
         </div>
     </div>
